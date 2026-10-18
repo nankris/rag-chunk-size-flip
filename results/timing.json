@@ -8,5 +8,11 @@
   },
   "start_ist": "2026-10-18T11:45:22.958477+05:30",
   "GPU": "L4 requested",
-  "setup_scripts_ready_ist": "2026-10-18T11:48:53.688953+05:30"
+  "setup_scripts_ready_ist": "2026-10-18T11:48:53.688953+05:30",
+  "interruptions": [
+    {
+      "resume_ist": "2026-10-18T12:39:04.463999+05:30",
+      "reason": "Original named Colab session absent; two other account GPU sessions occupy slots; five-minute allocation retries."
+    }
+  ]
 }

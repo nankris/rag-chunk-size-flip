@@ -1,0 +1,27 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/87599 [00:00<?, ? examples/s]Generating train split:  70%|██████▉   | 61000/87599 [00:00<00:00, 605192.86 examples/s]Generating train split: 100%|██████████| 87599/87599 [00:00<00:00, 672590.78 examples/s]
+Generating validation split:   0%|          | 0/10570 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 10570/10570 [00:00<00:00, 692910.40 examples/s]
+pilot documents 48 questions 300 sha256 c017598c510662e679ec2e37b40f45e06cf59fcc6310e6b1965b0d55017923ba
+Generating train split:   0%|          | 0/90447 [00:00<?, ? examples/s]Generating train split:   4%|▍         | 4000/90447 [00:00<00:03, 27670.61 examples/s]Generating train split:  10%|▉         | 9000/90447 [00:00<00:02, 34809.31 examples/s]Generating train split:  17%|█▋        | 15000/90447 [00:00<00:01, 42088.00 examples/s]Generating train split:  23%|██▎       | 21000/90447 [00:00<00:01, 43372.52 examples/s]Generating train split:  30%|██▉       | 27000/90447 [00:00<00:01, 44314.05 examples/s]Generating train split:  36%|███▋      | 33000/90447 [00:00<00:01, 47350.20 examples/s]Generating train split:  43%|████▎     | 39000/90447 [00:00<00:01, 47094.46 examples/s]Generating train split:  51%|█████     | 46224/90447 [00:01<00:00, 45591.67 examples/s]Generating train split:  58%|█████▊    | 52224/90447 [00:01<00:00, 47076.68 examples/s]Generating train split:  63%|██████▎   | 57224/90447 [00:01<00:00, 45525.50 examples/s]Generating train split:  70%|██████▉   | 63224/90447 [00:01<00:00, 45474.32 examples/s]Generating train split:  77%|███████▋  | 69224/90447 [00:01<00:00, 45904.16 examples/s]Generating train split:  83%|████████▎ | 75224/90447 [00:01<00:00, 45505.32 examples/s]Generating train split:  90%|████████▉ | 81224/90447 [00:01<00:00, 44764.49 examples/s]Generating train split:  96%|█████████▋| 87224/90447 [00:01<00:00, 46773.63 examples/s]Generating train split: 100%|██████████| 90447/90447 [00:01<00:00, 45466.89 examples/s]
+Generating validation split:   0%|          | 0/7405 [00:00<?, ? examples/s]Generating validation split:  54%|█████▍    | 4000/7405 [00:00<00:00, 37573.61 examples/s]Generating validation split: 100%|██████████| 7405/7405 [00:00<00:00, 46504.99 examples/s]
+confirm documents 5936 questions 600 sha256 af2bb2d26f17dcaebe129ac6dbb7235a4eb917ba250572b0d31abbe6b22c15c6
+STAGE_START pilot 2026-10-18T06:21:26+00:00
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 146/310 [00:00<00:00, 1454.77it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1671.60it/s]
+EMBED pilot_query_embeddings.npy 0 300
+EMBED pilot_embeddings_128.npy 0 2709
+EMBED pilot_embeddings_128.npy 480 2709
+EMBED pilot_embeddings_128.npy 960 2709
+EMBED pilot_embeddings_128.npy 1440 2709
+EMBED pilot_embeddings_128.npy 1920 2709
+EMBED pilot_embeddings_128.npy 2400 2709
+RETRIEVAL_DONE pilot 128 chunks 2709 seconds 15.639513492584229 recall 0.9933333333333333
+EMBED pilot_embeddings_256.npy 0 1367
+EMBED pilot_embeddings_256.npy 480 1367
+EMBED pilot_embeddings_256.npy 960 1367
+RETRIEVAL_DONE pilot 256 chunks 1367 seconds 17.911375761032104 recall 0.9766666666666667
+EMBED pilot_embeddings_512.npy 0 692
+EMBED pilot_embeddings_512.npy 480 692
+RETRIEVAL_DONE pilot 512 chunks 692 seconds 21.919638872146606 recall 0.97
+EMBED pilot_embeddings_1024.npy 0 355
