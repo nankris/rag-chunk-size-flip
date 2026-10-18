@@ -1,0 +1,7 @@
+{
+  "before_session_balance_CU": 133.25,
+  "initial_account_rate_CU_per_hour": 0,
+  "later_shared_account_rate_CU_per_hour": 3.08,
+  "later_active_assignments": 2,
+  "note": "Account balance includes other experiment. Report total observed account decrease as conservative upper bound unless session cost is available."
+}

@@ -25,3 +25,6 @@ Public HF data only. GPU work runs detached on Colab session `b8-132`, resumable
 `scripts/` holds preparation, GPU run and reporting programs. `results/` holds sampled data, per-question predictions, retrieval scores, token counts, judge records, bootstrap summaries, timing and usage evidence. `figures/` holds charts, a table image and runtime proof. `writeup.md` reports the fixed verdict; `blog.md` is the Substack post.
 
 Timing: estimated 100 minutes (setup 15, GPU run 65, evaluation 5, writing 15); actual, GPU and CU pending. Start time is recorded in `results/timing.json`.
+
+### Reconnect / resume
+Run `source /workspace/tools/setup.sh`, `colab usage`, `colab sessions`, then `bash scripts/sync.sh` to inspect this session's PID/log before restarting anything. The launcher refuses to duplicate its existing runner. If a process died, upload the scripts tarball and run `scripts/launch_remote.py`; completed retrieval files, embedding batches and answer IDs are reused. `scripts/repair_jsonl.py` removes only an incomplete final JSONL line before a rerun. Local `results/` remains the durable record across sandbox reboots.

@@ -1,0 +1,8 @@
+{
+  "source": "https://medium.com/illumination/which-rag-chunk-size-is-best-the-answer-flips-depending-on-how-you-score-it-2c3ef424e50c",
+  "author": "Aqeel Abbas",
+  "access": "Public title, subtitle and introduction read via browser; member-only body unavailable.",
+  "grounding": "Preview discusses precise short chunks versus context-rich large chunks, and a winner that changes with reading allowance. No numerical effect forecast is claimed.",
+  "primary_model_docs": ["https://huggingface.co/Qwen/Qwen3-Embedding-0.6B", "https://huggingface.co/Qwen/Qwen3-4B"],
+  "public_data": ["https://huggingface.co/datasets/rajpurkar/squad", "https://huggingface.co/datasets/hotpotqa/hotpot_qa"]
+}

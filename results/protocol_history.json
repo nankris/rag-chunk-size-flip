@@ -1,0 +1,10 @@
+{
+  "preregistration_commit": "554321b",
+  "hypothesis_changes_after_outcomes": false,
+  "confirmation_selection": "600 HotpotQA distractor validation examples, shuffled seed 132 before any retrieval",
+  "engineering_notes": [
+    "Initial Colab kernel control connection dropped before execution; retry succeeded.",
+    "Runtime Python 3.13 with torch 2.11.0+cu130. Selected vLLM 0.23.0 and transformers 5.5.4 for compatibility before any model run.",
+    "GPU pipeline is detached via subprocess.Popen(start_new_session=True), equivalent to nohup; log is /content/b8-132/run.log."
+  ]
+}

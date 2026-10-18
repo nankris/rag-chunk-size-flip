@@ -16,11 +16,11 @@ def score(pred,answers):
         vals.append((f,float(norm(pred)==norm(a))))
     return max(v[0] for v in vals),max(v[1] for v in vals)
 def main():
-    from transformers import AutoTokenizer
+    from transformers import AutoTokenizer,AutoConfig
     from vllm import LLM,SamplingParams
     tok=AutoTokenizer.from_pretrained('Qwen/Qwen3-4B')
     llm=LLM(model='Qwen/Qwen3-4B',dtype='half',max_model_len=6500,gpu_memory_utilization=.88,max_num_seqs=32,enable_prefix_caching=True,enforce_eager=True,seed=132)
-    (OUT/'generation_config.json').write_text(json.dumps({'model':'Qwen/Qwen3-4B','revision':getattr(llm.llm_engine.model_config.hf_config,'_commit_hash',None),'dtype':'float16','max_new_tokens':64,'temperature':0,'seed':132,'thinking':False,'max_model_len':6500},indent=2))
+    (OUT/'generation_config.json').write_text(json.dumps({'model':'Qwen/Qwen3-4B','revision':getattr(AutoConfig.from_pretrained('Qwen/Qwen3-4B'),'_commit_hash',None),'dtype':'float16','max_new_tokens':64,'temperature':0,'seed':132,'thinking':False,'max_model_len':6500},indent=2))
     def prompt(msg):return tok.apply_chat_template(msg,tokenize=False,add_generation_prompt=True,enable_thinking=False)
     stages=sys.argv[1:] or ['pilot','confirm']
     for stage in stages:
