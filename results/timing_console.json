@@ -1,0 +1,35 @@
+{
+  "estimated_minutes": {
+    "setup": 15,
+    "GPU_run": 65,
+    "eval": 5,
+    "writeup": 15,
+    "total": 100
+  },
+  "start_ist": "2026-10-18T11:45:22.958477+05:30",
+  "GPU": "NVIDIA L4",
+  "setup_scripts_ready_ist": "2026-10-18T11:48:53.688953+05:30",
+  "interruptions": [
+    {
+      "resume_ist": "2026-10-18T12:39:04.463999+05:30",
+      "reason": "Original named Colab session absent; two other account GPU sessions occupy slots; five-minute allocation retries."
+    }
+  ],
+  "end_ist": "2026-10-18T13:20:35.639052+05:30",
+  "actual_minutes": 95.21134291666667,
+  "stage_minutes": {
+    "setup": 3.5121746000000003,
+    "GPU_run": 27.87450880209605,
+    "eval": 0.04796681666666667,
+    "writeup": 22.5939842
+  },
+  "stage_timing_notes": {
+    "GPU_run": "Lower bound: complete resumed pilot+confirmation pipeline wall span plus original completed retrieval timings. Exact end of vanished original GPU session is unavailable, so lost startup/idle time cannot be allocated accurately. This is pipeline elapsed time, not a GPU kernel profiler.",
+    "setup": "Time until initial scripts-ready marker; excludes subsequent recovery and installation.",
+    "writeup": "Elapsed since publication preparation started, overlapping GPU run and evaluation. Stages are not additive.",
+    "total": "Exact wall time since original experiment start, including interruptions, slot waiting, recovery, GPU pipeline, evaluation and publication preparation."
+  },
+  "observed_resumed_GPU_pipeline_minutes": 26.95,
+  "original_completed_retrieval_minutes": 0.924508802096049,
+  "CU_account_decrease_upper_bound": 3.76
+}

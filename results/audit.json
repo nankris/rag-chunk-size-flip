@@ -1,0 +1,102 @@
+{
+  "pilot": {
+    "documents": 48,
+    "questions": 300,
+    "unique_question_ids": 300,
+    "dataset_info": {
+      "dataset": "rajpurkar/squad",
+      "split": "validation",
+      "fingerprint": "6614e223193ae5a9"
+    },
+    "sizes": {
+      "128": {
+        "chunks": 2709,
+        "single_chunk_documents_fraction": 0.0,
+        "full_chunks_fraction": 0.982281284606866,
+        "mean_chunk_tokens": 126.86304909560724,
+        "max_chunk_tokens": 128,
+        "truncated_answers": 0,
+        "unique_retrieved_documents_mean": 1.5
+      },
+      "256": {
+        "chunks": 1367,
+        "single_chunk_documents_fraction": 0.0,
+        "full_chunks_fraction": 0.9648866130212144,
+        "mean_chunk_tokens": 251.4059985369422,
+        "max_chunk_tokens": 256,
+        "truncated_answers": 1,
+        "unique_retrieved_documents_mean": 1.4833333333333334
+      },
+      "512": {
+        "chunks": 692,
+        "single_chunk_documents_fraction": 0.0,
+        "full_chunks_fraction": 0.930635838150289,
+        "mean_chunk_tokens": 496.63583815028903,
+        "max_chunk_tokens": 512,
+        "truncated_answers": 1,
+        "unique_retrieved_documents_mean": 1.5833333333333333
+      },
+      "1024": {
+        "chunks": 355,
+        "single_chunk_documents_fraction": 0.0,
+        "full_chunks_fraction": 0.8647887323943662,
+        "mean_chunk_tokens": 968.0901408450704,
+        "max_chunk_tokens": 1024,
+        "truncated_answers": 0,
+        "unique_retrieved_documents_mean": 1.7333333333333334
+      }
+    },
+    "identical_512_1024_top5_document_lists_fraction": 0.5433333333333333
+  },
+  "confirm": {
+    "documents": 5936,
+    "questions": 600,
+    "unique_question_ids": 600,
+    "dataset_info": {
+      "dataset": "hotpotqa/hotpot_qa",
+      "config": "distractor",
+      "split": "validation",
+      "fingerprint": "6d38dc5e932fe842",
+      "duplicate_title_text_conflicts": 1
+    },
+    "sizes": {
+      "128": {
+        "chunks": 9043,
+        "single_chunk_documents_fraction": 0.5567722371967655,
+        "full_chunks_fraction": 0.34822514652217185,
+        "mean_chunk_tokens": 87.90821629990047,
+        "max_chunk_tokens": 128,
+        "truncated_answers": 1,
+        "unique_retrieved_documents_mean": 4.8
+      },
+      "256": {
+        "chunks": 6336,
+        "single_chunk_documents_fraction": 0.936489218328841,
+        "full_chunks_fraction": 0.0634469696969697,
+        "mean_chunk_tokens": 125.46622474747475,
+        "max_chunk_tokens": 256,
+        "truncated_answers": 1,
+        "unique_retrieved_documents_mean": 4.985
+      },
+      "512": {
+        "chunks": 5956,
+        "single_chunk_documents_fraction": 0.9967991913746631,
+        "full_chunks_fraction": 0.0033579583613163196,
+        "mean_chunk_tokens": 133.47112155809268,
+        "max_chunk_tokens": 512,
+        "truncated_answers": 1,
+        "unique_retrieved_documents_mean": 5.0
+      },
+      "1024": {
+        "chunks": 5937,
+        "single_chunk_documents_fraction": 0.9998315363881402,
+        "full_chunks_fraction": 0.0001684352366515075,
+        "mean_chunk_tokens": 133.8982651170625,
+        "max_chunk_tokens": 1024,
+        "truncated_answers": 1,
+        "unique_retrieved_documents_mean": 5.0
+      }
+    },
+    "identical_512_1024_top5_document_lists_fraction": 0.98
+  }
+}

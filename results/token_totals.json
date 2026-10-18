@@ -1,0 +1,27 @@
+{
+  "pilot_answers": {
+    "requests": 1200,
+    "prompt_tokens": 2910903,
+    "completion_tokens": 10828
+  },
+  "pilot_judge": {
+    "requests": 240,
+    "prompt_tokens": 25365,
+    "completion_tokens": 778
+  },
+  "confirm_answers": {
+    "requests": 2400,
+    "prompt_tokens": 1652511,
+    "completion_tokens": 16682
+  },
+  "confirm_judge": {
+    "requests": 240,
+    "prompt_tokens": 23986,
+    "completion_tokens": 867
+  },
+  "total": {
+    "requests": 4080,
+    "prompt_tokens": 4612765,
+    "completion_tokens": 29155
+  }
+}

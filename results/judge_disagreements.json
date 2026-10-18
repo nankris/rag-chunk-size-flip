@@ -1,0 +1,1067 @@
+[
+  {
+    "stage": "pilot",
+    "id": "57309bfb8ab72b1400f9c5e6",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "Britain.",
+    "gold_answers": [
+      "British",
+      "British",
+      "British",
+      "British"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "572998673f37b319004784d5",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "Magicicadas.",
+    "gold_answers": [
+      "cicadas",
+      "cicadas",
+      "cicadas",
+      "cicadas"
+    ],
+    "prompt_tokens": 104,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "5730c810aca1c71400fe5aa7",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "5.",
+    "gold_answers": [
+      "five",
+      "The United States is divided into five jurisdictions",
+      "five"
+    ],
+    "prompt_tokens": 94,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "5733da01d058e614000b63f9",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.3333333333333333,
+    "em": 0.0,
+    "prediction": "The Siouan-speaking tribes mentioned are the Catawba.",
+    "gold_answers": [
+      "Catawba, Muskogee-speaking Creek and Choctaw",
+      "Catawba",
+      "Catawba",
+      "Catawba",
+      "Catawba"
+    ],
+    "prompt_tokens": 127,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "5726431aec44d21400f3dd13",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.2857142857142857,
+    "em": 0.0,
+    "prediction": "Tymnet was an international data communications network that used virtual call packet switched technology and connected host computers via X.25, SNA/SDLC, BSC, and ASCII interfaces.",
+    "gold_answers": [
+      "an international data communications network headquartered in San Jose, CA",
+      "an international data communications network",
+      "international data communications network"
+    ],
+    "prompt_tokens": 136,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "5730042804bcaa1900d77011",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4444444444444444,
+    "em": 0.0,
+    "prediction": "The Holocene began about 11,000 years ago.",
+    "gold_answers": [
+      "11,700 years ago",
+      "~11,700 years ago",
+      "~11,700 years ago"
+    ],
+    "prompt_tokens": 116,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "57309bfb8ab72b1400f9c5e6",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "Britain.",
+    "gold_answers": [
+      "British",
+      "British",
+      "British",
+      "British"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "572998673f37b319004784d5",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Cicadas of the genus Magicicada.",
+    "gold_answers": [
+      "cicadas",
+      "cicadas",
+      "cicadas",
+      "cicadas"
+    ],
+    "prompt_tokens": 109,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "57284142ff5b5019007da00a",
+    "size": 256,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.5,
+    "em": 0.0,
+    "prediction": "John D. Rockefeller and Marshall Field.",
+    "gold_answers": [
+      "Marshall Field",
+      "Marshall Field",
+      "Marshall Field",
+      "Marshall Field"
+    ],
+    "prompt_tokens": 102,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "pilot",
+    "id": "5730c810aca1c71400fe5aa7",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "5.",
+    "gold_answers": [
+      "five",
+      "The United States is divided into five jurisdictions",
+      "five"
+    ],
+    "prompt_tokens": 94,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "5733da01d058e614000b63f9",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.3333333333333333,
+    "em": 0.0,
+    "prediction": "The Siouan-speaking tribes mentioned are the Catawba.",
+    "gold_answers": [
+      "Catawba, Muskogee-speaking Creek and Choctaw",
+      "Catawba",
+      "Catawba",
+      "Catawba",
+      "Catawba"
+    ],
+    "prompt_tokens": 127,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "57267076708984140094c601",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Large-scale regeneration has replaced former shipping premises with imposing new office developments.",
+    "gold_answers": [
+      "Large-scale regeneration",
+      "Large-scale regeneration",
+      "new office developments"
+    ],
+    "prompt_tokens": 102,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "5726431aec44d21400f3dd13",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.16666666666666666,
+    "em": 0.0,
+    "prediction": "Tymnet was an international data communications network that used virtual call packet switched technology and connected host computers via X.25, SNA/SDLC, BSC, and ASCII interfaces. It had a public network for dial-up users and a private network for government agencies and large companies, connected via gateways to",
+    "gold_answers": [
+      "an international data communications network headquartered in San Jose, CA",
+      "an international data communications network",
+      "international data communications network"
+    ],
+    "prompt_tokens": 161,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "57309bfb8ab72b1400f9c5e6",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "Britain.",
+    "gold_answers": [
+      "British",
+      "British",
+      "British",
+      "British"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "572998673f37b319004784d5",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "Magicicada.",
+    "gold_answers": [
+      "cicadas",
+      "cicadas",
+      "cicadas",
+      "cicadas"
+    ],
+    "prompt_tokens": 104,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "572810ec2ca10214002d9d06",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.36363636363636365,
+    "em": 0.0,
+    "prediction": "The Spanish conceded Florida to Britain after the French and Indian War, which ended with the Treaty of Paris in 1763.",
+    "gold_answers": [
+      "French and Indian War",
+      "French and Indian War",
+      "French and Indian War"
+    ],
+    "prompt_tokens": 121,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "56f80fdfaef2371900625d95",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4444444444444444,
+    "em": 0.0,
+    "prediction": "Albert of Mainz.",
+    "gold_answers": [
+      "Archbishop Albrecht",
+      "Archbishop Albrecht",
+      "Archbishop Albrecht of Mainz and Magdeburg"
+    ],
+    "prompt_tokens": 113,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "57284142ff5b5019007da00a",
+    "size": 512,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.5,
+    "em": 0.0,
+    "prediction": "John D. Rockefeller and Marshall Field.",
+    "gold_answers": [
+      "Marshall Field",
+      "Marshall Field",
+      "Marshall Field",
+      "Marshall Field"
+    ],
+    "prompt_tokens": 102,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "pilot",
+    "id": "5733da01d058e614000b63f9",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.3333333333333333,
+    "em": 0.0,
+    "prediction": "The Siouan-speaking tribes mentioned are the Catawba.",
+    "gold_answers": [
+      "Catawba, Muskogee-speaking Creek and Choctaw",
+      "Catawba",
+      "Catawba",
+      "Catawba",
+      "Catawba"
+    ],
+    "prompt_tokens": 127,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "57267076708984140094c601",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Large-scale regeneration has replaced former shipping premises with imposing new office developments.",
+    "gold_answers": [
+      "Large-scale regeneration",
+      "Large-scale regeneration",
+      "new office developments"
+    ],
+    "prompt_tokens": 102,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "56e1a564cd28a01900c67a48",
+    "size": 512,
+    "judge_text": "INCORRECT.",
+    "judge_correct": 0,
+    "f1": 0.5,
+    "em": 0.0,
+    "prediction": "Cobham\u2013Edmonds thesis.",
+    "gold_answers": [
+      "Cobham's thesis",
+      "Cobham's",
+      "Cobham"
+    ],
+    "prompt_tokens": 115,
+    "completion_tokens": 5
+  },
+  {
+    "stage": "pilot",
+    "id": "56f8c2ee9b226e1400dd0f45",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.16216216216216217,
+    "em": 0.0,
+    "prediction": "Luther's health deteriorated further from 1531 to 1546, suffering from various illnesses including M\u00e9ni\u00e8re's disease, vertigo, fainting, tinnitus, cataract, kidney and bladder stones, arthritis, ear infection, and angina. His poor physical health made him",
+    "gold_answers": [
+      "his health deteriorated",
+      "deteriorated",
+      "deteriorated"
+    ],
+    "prompt_tokens": 167,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "57309bfb8ab72b1400f9c5e6",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "Britain.",
+    "gold_answers": [
+      "British",
+      "British",
+      "British",
+      "British"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "56e1fc57e3433e140042322c",
+    "size": 1024,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.5,
+    "em": 0.0,
+    "prediction": "NP-hard problems.",
+    "gold_answers": [
+      "intractable problems",
+      "intractable problems",
+      "intractable",
+      "intractable"
+    ],
+    "prompt_tokens": 108,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "pilot",
+    "id": "572998673f37b319004784d5",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "Magicicada.",
+    "gold_answers": [
+      "cicadas",
+      "cicadas",
+      "cicadas",
+      "cicadas"
+    ],
+    "prompt_tokens": 104,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "56f80fdfaef2371900625d95",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4444444444444444,
+    "em": 0.0,
+    "prediction": "Albert of Mainz.",
+    "gold_answers": [
+      "Archbishop Albrecht",
+      "Archbishop Albrecht",
+      "Archbishop Albrecht of Mainz and Magdeburg"
+    ],
+    "prompt_tokens": 113,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "5733da01d058e614000b63f9",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.3333333333333333,
+    "em": 0.0,
+    "prediction": "The Siouan-speaking tribes mentioned are the Catawba.",
+    "gold_answers": [
+      "Catawba, Muskogee-speaking Creek and Choctaw",
+      "Catawba",
+      "Catawba",
+      "Catawba",
+      "Catawba"
+    ],
+    "prompt_tokens": 127,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "pilot",
+    "id": "57267076708984140094c601",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Large-scale regeneration has replaced former shipping premises with imposing new office developments.",
+    "gold_answers": [
+      "Large-scale regeneration",
+      "Large-scale regeneration",
+      "new office developments"
+    ],
+    "prompt_tokens": 102,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5a828c3355429940e5e1a8f0",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.13333333333333333,
+    "em": 0.0,
+    "prediction": "Alyson Stoner is best known for her role as Sakura Haruno in \"Naruto\".",
+    "gold_answers": [
+      "Naruto Uzumaki"
+    ],
+    "prompt_tokens": 127,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ae71bee554299572ea546ea",
+    "size": 128,
+    "judge_text": "CORRECT.",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Al Capone.",
+    "gold_answers": [
+      "Alphonse Gabriel Capone"
+    ],
+    "prompt_tokens": 96,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab71f7d554299110f219ab9",
+    "size": 128,
+    "judge_text": "INCORRECT.",
+    "judge_correct": 0,
+    "f1": 0.5,
+    "em": 0.0,
+    "prediction": "BBC Radio 1.",
+    "gold_answers": [
+      "BBC"
+    ],
+    "prompt_tokens": 110,
+    "completion_tokens": 5
+  },
+  {
+    "stage": "confirm",
+    "id": "5a8e612b5542995085b3741b",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.3333333333333333,
+    "em": 0.0,
+    "prediction": "Both are documentary films.",
+    "gold_answers": [
+      "documentary film"
+    ],
+    "prompt_tokens": 88,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab5f75e554299637185c64b",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.0,
+    "em": 0.0,
+    "prediction": "Pizza.",
+    "gold_answers": [
+      "pizzas"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab82bbb5542990e739ec84c",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.2857142857142857,
+    "em": 0.0,
+    "prediction": "Babiana has more species than Ceratophyllum.",
+    "gold_answers": [
+      "Babiana"
+    ],
+    "prompt_tokens": 96,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ae0b9b155429924de1b7152",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0,
+    "em": 0.0,
+    "prediction": "No. Mina Loy was British, but Raymond Carver was American.",
+    "gold_answers": [
+      "no"
+    ],
+    "prompt_tokens": 95,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5a721b9055429971e9dc9277",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.2857142857142857,
+    "em": 0.0,
+    "prediction": "Scandinavian Airlines System Aktiebolag (SAS).",
+    "gold_answers": [
+      "SAS Group"
+    ],
+    "prompt_tokens": 107,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab53bee554299637185c526",
+    "size": 128,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.6,
+    "em": 0.0,
+    "prediction": "controversial public figure.",
+    "gold_answers": [
+      "both a lauded intellectual and a controversial public figure"
+    ],
+    "prompt_tokens": 98,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5ac160af5542994d76dccdfa",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4444444444444444,
+    "em": 0.0,
+    "prediction": "Rice University.",
+    "gold_answers": [
+      "Rice University in Houston, Texas, United States"
+    ],
+    "prompt_tokens": 101,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5a74bdce55429929fddd84e1",
+    "size": 128,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.5714285714285714,
+    "em": 0.0,
+    "prediction": "Vladimir Arnold died last.",
+    "gold_answers": [
+      "Vladimir Igorevich Arnold"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5a7323ad5542994cef4bc476",
+    "size": 128,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.17391304347826086,
+    "em": 0.0,
+    "prediction": "Chantal Claret was born on February 21, 1982, and Max Green was born on December 15, 1984. Chantal Claret is older.",
+    "gold_answers": [
+      "Chantal Claret"
+    ],
+    "prompt_tokens": 126,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5a828c3355429940e5e1a8f0",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.13333333333333333,
+    "em": 0.0,
+    "prediction": "Alyson Stoner is best known for her role as Sakura Haruno in \"Naruto\".",
+    "gold_answers": [
+      "Naruto Uzumaki"
+    ],
+    "prompt_tokens": 127,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ae71bee554299572ea546ea",
+    "size": 256,
+    "judge_text": "CORRECT.",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Al Capone.",
+    "gold_answers": [
+      "Alphonse Gabriel Capone"
+    ],
+    "prompt_tokens": 96,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab71f7d554299110f219ab9",
+    "size": 256,
+    "judge_text": "INCORRECT.",
+    "judge_correct": 0,
+    "f1": 0.5,
+    "em": 0.0,
+    "prediction": "BBC Radio 1.",
+    "gold_answers": [
+      "BBC"
+    ],
+    "prompt_tokens": 110,
+    "completion_tokens": 5
+  },
+  {
+    "stage": "confirm",
+    "id": "5a8a1a9c5542992d82986ebb",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Sparafucile in Verdi's \"Rigoletto\".",
+    "gold_answers": [
+      "Sparafucile"
+    ],
+    "prompt_tokens": 102,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab82bbb5542990e739ec84c",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.2857142857142857,
+    "em": 0.0,
+    "prediction": "Babiana has more species than Ceratophyllum.",
+    "gold_answers": [
+      "Babiana"
+    ],
+    "prompt_tokens": 96,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ae0b9b155429924de1b7152",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0,
+    "em": 0.0,
+    "prediction": "No. Mina Loy was British, but Raymond Carver was American.",
+    "gold_answers": [
+      "no"
+    ],
+    "prompt_tokens": 95,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab53bee554299637185c526",
+    "size": 256,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.6,
+    "em": 0.0,
+    "prediction": "controversial public figure.",
+    "gold_answers": [
+      "both a lauded intellectual and a controversial public figure"
+    ],
+    "prompt_tokens": 98,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5ac160af5542994d76dccdfa",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4444444444444444,
+    "em": 0.0,
+    "prediction": "Rice University.",
+    "gold_answers": [
+      "Rice University in Houston, Texas, United States"
+    ],
+    "prompt_tokens": 101,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5a74bdce55429929fddd84e1",
+    "size": 256,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.5714285714285714,
+    "em": 0.0,
+    "prediction": "Vladimir Arnold died last.",
+    "gold_answers": [
+      "Vladimir Igorevich Arnold"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5a7323ad5542994cef4bc476",
+    "size": 256,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.17391304347826086,
+    "em": 0.0,
+    "prediction": "Chantal Claret was born on February 21, 1982, and Max Green was born on December 15, 1984. Chantal Claret is older.",
+    "gold_answers": [
+      "Chantal Claret"
+    ],
+    "prompt_tokens": 126,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ae71bee554299572ea546ea",
+    "size": 512,
+    "judge_text": "CORRECT.",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Al Capone.",
+    "gold_answers": [
+      "Alphonse Gabriel Capone"
+    ],
+    "prompt_tokens": 96,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab71f7d554299110f219ab9",
+    "size": 512,
+    "judge_text": "INCORRECT.",
+    "judge_correct": 0,
+    "f1": 0.5,
+    "em": 0.0,
+    "prediction": "BBC Radio 1.",
+    "gold_answers": [
+      "BBC"
+    ],
+    "prompt_tokens": 110,
+    "completion_tokens": 5
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab82bbb5542990e739ec84c",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.2857142857142857,
+    "em": 0.0,
+    "prediction": "Babiana has more species than Ceratophyllum.",
+    "gold_answers": [
+      "Babiana"
+    ],
+    "prompt_tokens": 96,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ae0b9b155429924de1b7152",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0,
+    "em": 0.0,
+    "prediction": "No. Mina Loy was British, but Raymond Carver was American.",
+    "gold_answers": [
+      "no"
+    ],
+    "prompt_tokens": 95,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab53bee554299637185c526",
+    "size": 512,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.6,
+    "em": 0.0,
+    "prediction": "controversial public figure",
+    "gold_answers": [
+      "both a lauded intellectual and a controversial public figure"
+    ],
+    "prompt_tokens": 97,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5ac160af5542994d76dccdfa",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4444444444444444,
+    "em": 0.0,
+    "prediction": "Rice University.",
+    "gold_answers": [
+      "Rice University in Houston, Texas, United States"
+    ],
+    "prompt_tokens": 101,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5a74bdce55429929fddd84e1",
+    "size": 512,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.5714285714285714,
+    "em": 0.0,
+    "prediction": "Vladimir Arnold died last.",
+    "gold_answers": [
+      "Vladimir Igorevich Arnold"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5a7323ad5542994cef4bc476",
+    "size": 512,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.17391304347826086,
+    "em": 0.0,
+    "prediction": "Chantal Claret was born on February 21, 1982, and Max Green was born on December 15, 1984. Chantal Claret is older.",
+    "gold_answers": [
+      "Chantal Claret"
+    ],
+    "prompt_tokens": 126,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ae71bee554299572ea546ea",
+    "size": 1024,
+    "judge_text": "CORRECT.",
+    "judge_correct": 1,
+    "f1": 0.4,
+    "em": 0.0,
+    "prediction": "Al Capone.",
+    "gold_answers": [
+      "Alphonse Gabriel Capone"
+    ],
+    "prompt_tokens": 96,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab71f7d554299110f219ab9",
+    "size": 1024,
+    "judge_text": "INCORRECT.",
+    "judge_correct": 0,
+    "f1": 0.5,
+    "em": 0.0,
+    "prediction": "BBC Radio 1.",
+    "gold_answers": [
+      "BBC"
+    ],
+    "prompt_tokens": 110,
+    "completion_tokens": 5
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab82bbb5542990e739ec84c",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.2857142857142857,
+    "em": 0.0,
+    "prediction": "Babiana has more species than Ceratophyllum.",
+    "gold_answers": [
+      "Babiana"
+    ],
+    "prompt_tokens": 96,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ae0b9b155429924de1b7152",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0,
+    "em": 0.0,
+    "prediction": "No. Mina Loy was British, but Raymond Carver was American.",
+    "gold_answers": [
+      "no"
+    ],
+    "prompt_tokens": 95,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5ab53bee554299637185c526",
+    "size": 1024,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.6,
+    "em": 0.0,
+    "prediction": "controversial public figure",
+    "gold_answers": [
+      "both a lauded intellectual and a controversial public figure"
+    ],
+    "prompt_tokens": 97,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5ac160af5542994d76dccdfa",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.4444444444444444,
+    "em": 0.0,
+    "prediction": "Rice University.",
+    "gold_answers": [
+      "Rice University in Houston, Texas, United States"
+    ],
+    "prompt_tokens": 101,
+    "completion_tokens": 3
+  },
+  {
+    "stage": "confirm",
+    "id": "5a74bdce55429929fddd84e1",
+    "size": 1024,
+    "judge_text": "INCORRECT",
+    "judge_correct": 0,
+    "f1": 0.5714285714285714,
+    "em": 0.0,
+    "prediction": "Vladimir Arnold died last.",
+    "gold_answers": [
+      "Vladimir Igorevich Arnold"
+    ],
+    "prompt_tokens": 90,
+    "completion_tokens": 4
+  },
+  {
+    "stage": "confirm",
+    "id": "5a7323ad5542994cef4bc476",
+    "size": 1024,
+    "judge_text": "CORRECT",
+    "judge_correct": 1,
+    "f1": 0.17391304347826086,
+    "em": 0.0,
+    "prediction": "Chantal Claret was born on February 21, 1982, and Max Green was born on December 15, 1984. Chantal Claret is older.",
+    "gold_answers": [
+      "Chantal Claret"
+    ],
+    "prompt_tokens": 126,
+    "completion_tokens": 3
+  }
+]

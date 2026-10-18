@@ -1,5 +1,9 @@
 # Experiment 132: Does RAG chunk-size ranking flip with the metric?
 
+Completed: **INCONCLUSIVE** on the fixed confirmation rule. On 600 fresh HotpotQA questions, 1024 versus 128 tokens gained **2.10 F1 points**, simultaneous CI **[-0.34, 4.62]**, below the five-point practical threshold; retrieval differences were near zero. The pilot went the other way: larger chunks lost 6.90 F1 points. See [writeup.md](writeup.md), [blog.md](blog.md), and [the table image](figures/table.png).
+
+GPU: **NVIDIA L4**, session `b8-132` **stopped** after copying all outputs. CU: **at most 3.76 observed account units**, a conservative shared-account upper bound; exact per-session usage is unavailable. This stayed below the 6-CU cap. See `results/usage_final.json`.
+
 ## Question and evidence
 Does a smaller chunk improve retrieval while a larger chunk improves answers on the same questions? Source: [Aqeel Abbas, Which RAG Chunk Size Is Best?](https://medium.com/illumination/which-rag-chunk-size-is-best-the-answer-flips-depending-on-how-you-score-it-2c3ef424e50c). The accessible preview describes precision versus surrounding context and says the winner changes with the reading budget. The full method/results are paywalled; this is an independent test, not an exact replication. We make directional predictions from that mechanism, not invented numerical effect forecasts.
 
@@ -24,10 +28,24 @@ Public HF data only. GPU work runs detached on Colab session `b8-132`, resumable
 ## Deliverables and reproduction
 `scripts/` holds preparation, GPU run and reporting programs. `results/` holds sampled data, per-question predictions, retrieval scores, token counts, judge records, bootstrap summaries, timing and usage evidence. `figures/` holds charts, a table image and runtime proof. `writeup.md` reports the fixed verdict; `blog.md` is the Substack post.
 
-Timing: estimated 100 minutes (setup 15, GPU run 65, evaluation 5, writing 15); actual, GPU and CU pending. Start time is recorded in `results/timing.json`.
+Timing: estimated 100 minutes; actual 95.2 minutes elapsed, including recovery/waiting; NVIDIA L4; at most 3.76 CU (shared-account upper bound). Stage timings and recovery limitations are in `results/timing.json`; the original lost session prevents exact GPU-stage accounting.
 
 ### Reconnect / resume
 Run `source /workspace/tools/setup.sh`, `colab usage`, `colab sessions`, then `bash scripts/sync.sh` to inspect this session's PID/log before restarting anything. The launcher refuses to duplicate its existing runner. If a process died, upload the scripts tarball and run `scripts/launch_remote.py`; completed retrieval files, embedding batches and answer IDs are reused. `scripts/repair_jsonl.py` removes only an incomplete final JSONL line before a rerun. Local `results/` remains the durable record across sandbox reboots.
 
 ### Recovery note (18 October 2026)
 The original L4 session was absent on resume at approximately 07:00 UTC. Durable local checkpoints contain all frozen dataset records and pilot retrieval for 128, 256 and 512 tokens. The preregistration remains unchanged. Two other account GPU assignments occupy the available slots; allocation attempts for `b8-132` are logged in `results/allocation_attempts.jsonl` and retried every five minutes for up to two hours. Other sessions are never modified. Shared-account balance changes while waiting cannot be attributed to this experiment.
+
+## Reproduce the local report
+
+```bash
+source /workspace/tools/setup.sh
+/workspace/tools/mlenv/bin/python scripts/validate.py
+/workspace/tools/mlenv/bin/python scripts/analyze.py
+/workspace/tools/mlenv/bin/python scripts/export.py
+/workspace/tools/mlenv/bin/python scripts/publication.py
+```
+
+Frozen public data, question IDs, model revisions and package versions are under `results/`. The preregistration section above is byte-for-byte unchanged from commit `554321b`, made before GPU execution; see `results/preregistration_audit.json`. There are 3,600 scored answers and 480 judge records. `results/token_totals.json` aggregates the served-model token counts.
+
+The three charts are `figures/metrics.png`, `figures/contrasts.png`, and `figures/tokens_vs_f1.png`; `figures/table.png` is the main table. All PNGs are 150 dpi. `figures/colab_run.txt` and `run.log` preserve hardware, stage boundaries, and per-batch timings. The 512/1024 comparison is limited by short confirmation documents: 99.7% fit in 512 tokens.

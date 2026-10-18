@@ -7,6 +7,7 @@ p=s['pilot'];c=s['confirm'];v=c['verdict']
 def val(st,sz,m):return s[st]['metrics'][str(sz)][m]['mean']
 def pct(x):return f'{100*x:.1f}'
 def ci(z,key='ci95'):return f"[{100*z[key][0]:.1f}, {100*z[key][1]:.1f}]"
+def ci2(z,key='ci95'):return f"[{100*z[key][0]:.2f}, {100*z[key][1]:.2f}]"
 def cell(st,sz,m):
  z=s[st]['metrics'][str(sz)][m];return f"{pct(z['mean'])} {ci(z)}"
 headline=f"{pct(c['contrasts']['f1']['mean'])} percentage points"
@@ -17,7 +18,7 @@ for st in ['pilot','confirm']:
   table+='| '+('SQuAD pilot' if st=='pilot' else 'HotpotQA confirm')+f' | {sz} | '+' | '.join(cell(st,sz,m) for m in ['recall','mrr','f1','em'])+f" | {val(st,sz,'prompt_tokens'):,.0f} |\n"
 contr='| Required contrast | Difference, points | 95% paired CI | Familywise 95% CI |\n|---|---:|---:|---:|\n'
 for m in ['recall','mrr','f1']:
- z=c['contrasts'][m];contr+=f"| {m}: {z['direction']} | {pct(z['mean'])} | {ci(z)} | {ci(z,'ci_simultaneous')} |\n"
+ z=c['contrasts'][m];contr+=f"| {m}: {z['direction']} | {100*z['mean']:.2f} | {ci2(z)} | {ci2(z,'ci_simultaneous')} |\n"
 if v=='DISPROVEN':take='The preregistered claim that small chunks improve retrieval while large chunks improve answers failed on the fresh confirmation dataset. A chunk-size winner depends on this corpus and operating policy; this run does not establish a universal ranking flip.'
 elif v=='PROVEN':take='Small chunks improved retrieval while large chunks improved answer F1 on the fresh confirmation dataset, meeting the fixed test for a reversal. This result applies to the tested top-five policy and corpus, where chunk size also changes the amount of text the model reads.'
 else:take='This run did not resolve the preregistered ranking-flip claim at the chosen confidence and practical thresholds. The observed differences are useful measurements, but they do not establish a reliable universal reversal.'
@@ -50,6 +51,10 @@ H1 predicted 128 > 1024 on both document Recall@5 and MRR@5. H2 predicted 1024 >
 
 {contr}
 
+The pilot alone would be labelled DISPROVEN by the same directional rule: large-minus-small F1 was {100*p['contrasts']['f1']['mean']:.2f} points, simultaneous CI {ci2(p['contrasts']['f1'],'ci_simultaneous')}. It did not establish the predicted answer benefit. The final verdict uses confirmation only.
+
+On confirmation, the ordinary F1 interval barely excludes zero, but the simultaneous interval crosses it and the 2.10-point gain misses the fixed five-point practical threshold. The planned retrieval advantages are absent. This is why a nominally positive answer result does not prove the full claim.
+
 Pilot paired standard deviations were {p['contrasts']['recall']['paired_sd']:.3f} for Recall, {p['contrasts']['mrr']['paired_sd']:.3f} for MRR, and {p['contrasts']['f1']['paired_sd']:.3f} for F1. At the already-fixed confirmation n=600, these imply approximate simultaneous half-widths of {100*p['contrasts']['recall']['planned_confirmation_simultaneous_halfwidth']:.1f}, {100*p['contrasts']['mrr']['planned_confirmation_simultaneous_halfwidth']:.1f}, and {100*p['contrasts']['f1']['planned_confirmation_simultaneous_halfwidth']:.1f} percentage points if paired variability transferred across datasets. They are precision diagnostics, not guaranteed power on another dataset.
 
 Bonferroni 98.333% individual intervals provide at least 95% simultaneous coverage over the three planned directional contrasts. No hypothesis or sample size changed after pilot outcomes. Preregistration commit: `554321b`.
@@ -60,7 +65,7 @@ Pilot: 300 SQuAD questions, 48 title-grouped articles. Confirmation: 600 HotpotQ
 
 The confirmation corpus has one duplicate-title text conflict, resolved by taking the first version before retrieval. Document relevance is a coarse label: a chunk from a gold document can score as relevant without containing the answer. HotpotQA Recall counts both supporting documents; MRR rewards the first one. These definitions can disagree with useful evidence retrieval.
 
-At 512 versus 1024 tokens, identical top-five document lists occur on {100*a['confirm']['identical_512_1024_top5_document_lists_fraction']:.1f}% of confirmation questions. Mean chunk lengths are {a['confirm']['sizes']['512']['mean_chunk_tokens']:.1f} and {a['confirm']['sizes']['1024']['mean_chunk_tokens']:.1f} tokens respectively. A configured maximum is not a guarantee that documents fill it.
+At 512 versus 1024 tokens, identical top-five document lists occur on {100*a['confirm']['identical_512_1024_top5_document_lists_fraction']:.1f}% of confirmation questions. At 512 tokens, {100*a['confirm']['sizes']['512']['single_chunk_documents_fraction']:.1f}% of documents fit a single chunk. Mean chunk lengths are {a['confirm']['sizes']['512']['mean_chunk_tokens']:.1f} and {a['confirm']['sizes']['1024']['mean_chunk_tokens']:.1f} tokens respectively. A configured maximum is not a guarantee that documents fill it.
 
 Qwen judged 60 questions per dataset at all four sizes, 240 candidate answers per dataset. Confirmation valid labels: {c['judge_total']['valid']}/240. Agreement with F1 >=0.5: {100*c['judge_total']['agreement_f1_half']:.1f}%; agreement with exact match: {100*c['judge_total']['agreement_em']:.1f}%. This uses the same model family and reference answers, not human adjudication. Disagreements are saved in `results/judge_disagreements.json`.
 
@@ -122,7 +127,7 @@ I used paired bootstrap intervals, resampling questions 10,000 times. Each resam
 
 For the three primary claims, I adjusted the intervals so their combined coverage was at least 95%. I also required a gain of at least five percentage points on every planned metric before calling the full claim proven. That threshold corresponds to one more useful result per twenty questions, a practical reason to consider changing ingestion settings.
 
-The confirmation F1 difference had a conventional 95% interval of {ci(c['contrasts']['f1'])} percentage points. Its simultaneous interval was {ci(c['contrasts']['f1'],'ci_simultaneous')}. The verdict comes from the complete preregistered rule, including retrieval, rather than choosing whichever individual score tells the neatest story.
+The confirmation F1 difference had a conventional 95% interval of {ci(c['contrasts']['f1'])} percentage points. Its simultaneous interval was {ci(c['contrasts']['f1'],'ci_simultaneous')}. The ordinary interval barely clears zero, but the adjusted interval does not. The gain also falls below the fixed five-point threshold, while the predicted retrieval advantage is absent. The verdict follows the complete preregistered rule.
 
 ![The planned directional comparisons](figures/contrasts.png)
 

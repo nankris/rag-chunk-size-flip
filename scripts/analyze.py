@@ -66,8 +66,10 @@ def main():
  fig,ax=plt.subplots(figsize=(9,5))
  for stage in ['pilot','confirm']:
   x=[summary[stage]['metrics'][s]['prompt_tokens']['mean'] for s in SIZES];y=[summary[stage]['metrics'][s]['f1']['mean']*100 for s in SIZES];ax.plot(x,y,'o-',color=colors[stage],label=stage.title())
-  for a,b,s in zip(x,y,SIZES):ax.annotate(str(s),(a,b),xytext=(6,5),textcoords='offset points',fontsize=9)
- ax.set(xlabel='Mean actual answer prompt tokens (including instructions)',ylabel='Mean answer token F1 (%)',title='Larger chunks spend more reading budget');ax.grid(alpha=.2);ax.legend();fig.tight_layout();fig.savefig(FIG/'tokens_vs_f1.png');plt.close(fig)
+  for a,b,s in zip(x,y,SIZES):
+   offset=({128:(6,-1),256:(-5,35),512:(60,6),1024:(60,-22)}[s] if stage=='confirm' else (6,5))
+   ax.annotate(str(s),(a,b),xytext=offset,textcoords='offset points',fontsize=9,arrowprops={'arrowstyle':'-','color':colors[stage],'lw':.7} if stage=='confirm' and s!=128 else None)
+ ax.set(xlabel='Mean actual answer prompt tokens (including instructions)',ylabel='Mean answer token F1 (%)',title='Reading budget depends on the corpus');ax.grid(alpha=.2);ax.legend();fig.tight_layout();fig.savefig(FIG/'tokens_vs_f1.png');plt.close(fig)
  def fmt(v):return f"{v['mean']*100:.1f} [{v['ci95'][0]*100:.1f}, {v['ci95'][1]*100:.1f}]"
  table_rows=[]
  for stage in ['pilot','confirm']:

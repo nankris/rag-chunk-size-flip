@@ -1,0 +1,20 @@
+{
+  "GPU": "NVIDIA L4",
+  "session": "b8-132",
+  "initial_balance_CU": 133.25,
+  "before_stop": {
+    "utc": "2026-10-18T07:49:14.241134+00:00",
+    "raw": "Current balance: 129.49 compute units\nUsage rate: 3.08/hr\nActive assignments: 2\n",
+    "balance_CU": 129.49
+  },
+  "after_stop": {
+    "utc": "2026-10-18T07:49:17.268923+00:00",
+    "raw": "Current balance: 129.49 compute units\nUsage rate: 1.54/hr\nActive assignments: 1\n",
+    "balance_CU": 129.49
+  },
+  "experiment_CU_exact": null,
+  "conservative_account_decrease_CU": 3.76,
+  "limit_CU": 6,
+  "session_stopped": true,
+  "accounting_note": "Exact per-session charges are not exposed by colab usage. The observed total account decrease includes other experiments and allocation waiting, so it is reported as a conservative upper bound on this experiment, not an exact measured session charge."
+}

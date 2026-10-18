@@ -44,3 +44,149 @@ RUN_START 2026-10-18T07:19:20+00:00
 STAGE_START pilot 2026-10-18T07:21:09+00:00
 STAGE_END pilot 2026-10-18T07:35:20+00:00
 STAGE_START confirm 2026-10-18T07:35:20+00:00
+STAGE_END confirm 2026-10-18T07:48:06+00:00
+RUN_END 2026-10-18T07:48:08+00:00
+
+CHECKPOINTED RUN EXCERPTS
+RETRIEVAL_DONE pilot 1024 chunks 355 seconds 24.289530277252197 recall 0.9333333333333333
+ANSWER_BATCH pilot 128 32 of 300 seconds 4.47
+ANSWER_BATCH pilot 128 64 of 300 seconds 5.17
+ANSWER_BATCH pilot 128 96 of 300 seconds 5.33
+ANSWER_BATCH pilot 128 128 of 300 seconds 4.57
+ANSWER_BATCH pilot 128 160 of 300 seconds 4.89
+ANSWER_BATCH pilot 128 192 of 300 seconds 4.36
+ANSWER_BATCH pilot 128 224 of 300 seconds 5.7
+ANSWER_BATCH pilot 128 256 of 300 seconds 5.76
+ANSWER_BATCH pilot 128 288 of 300 seconds 4.34
+ANSWER_BATCH pilot 128 300 of 300 seconds 2.82
+ANSWER_BATCH pilot 256 32 of 300 seconds 7.82
+ANSWER_BATCH pilot 256 64 of 300 seconds 9.53
+ANSWER_BATCH pilot 256 96 of 300 seconds 8.82
+ANSWER_BATCH pilot 256 128 of 300 seconds 7.91
+ANSWER_BATCH pilot 256 160 of 300 seconds 9.43
+ANSWER_BATCH pilot 256 192 of 300 seconds 8.14
+ANSWER_BATCH pilot 256 224 of 300 seconds 8.71
+ANSWER_BATCH pilot 256 256 of 300 seconds 9.38
+ANSWER_BATCH pilot 256 288 of 300 seconds 8.12
+ANSWER_BATCH pilot 256 300 of 300 seconds 4.14
+ANSWER_BATCH pilot 512 32 of 300 seconds 15.55
+ANSWER_BATCH pilot 512 64 of 300 seconds 16.77
+ANSWER_BATCH pilot 512 96 of 300 seconds 15.82
+ANSWER_BATCH pilot 512 128 of 300 seconds 15.18
+ANSWER_BATCH pilot 512 160 of 300 seconds 15.8
+ANSWER_BATCH pilot 512 192 of 300 seconds 15.12
+ANSWER_BATCH pilot 512 224 of 300 seconds 16.13
+ANSWER_BATCH pilot 512 256 of 300 seconds 16.68
+ANSWER_BATCH pilot 512 288 of 300 seconds 15.5
+ANSWER_BATCH pilot 512 300 of 300 seconds 6.83
+ANSWER_BATCH pilot 1024 32 of 300 seconds 30.73
+ANSWER_BATCH pilot 1024 64 of 300 seconds 30.57
+ANSWER_BATCH pilot 1024 96 of 300 seconds 32.15
+ANSWER_BATCH pilot 1024 128 of 300 seconds 31.21
+ANSWER_BATCH pilot 1024 160 of 300 seconds 31.8
+ANSWER_BATCH pilot 1024 192 of 300 seconds 32.59
+ANSWER_BATCH pilot 1024 224 of 300 seconds 32.87
+ANSWER_BATCH pilot 1024 256 of 300 seconds 32.63
+ANSWER_BATCH pilot 1024 288 of 300 seconds 31.13
+ANSWER_BATCH pilot 1024 300 of 300 seconds 12.98
+JUDGE_BATCH pilot 32 of 240
+JUDGE_BATCH pilot 64 of 240
+JUDGE_BATCH pilot 96 of 240
+JUDGE_BATCH pilot 128 of 240
+JUDGE_BATCH pilot 160 of 240
+JUDGE_BATCH pilot 192 of 240
+JUDGE_BATCH pilot 224 of 240
+JUDGE_BATCH pilot 240 of 240
+GENERATION_ALL_DONE
+RETRIEVAL_DONE confirm 128 chunks 9043 seconds 54.85477805137634 recall 0.7941666666666667
+RETRIEVAL_DONE confirm 256 chunks 6336 seconds 79.61680603027344 recall 0.7966666666666666
+RETRIEVAL_DONE confirm 512 chunks 5956 seconds 103.18966841697693 recall 0.795
+RETRIEVAL_DONE confirm 1024 chunks 5937 seconds 105.88824844360352 recall 0.795
+ANSWER_BATCH confirm 128 32 of 600 seconds 3.69
+ANSWER_BATCH confirm 128 64 of 600 seconds 4.35
+ANSWER_BATCH confirm 128 96 of 600 seconds 5.1
+ANSWER_BATCH confirm 128 128 of 600 seconds 4.45
+ANSWER_BATCH confirm 128 160 of 600 seconds 4.19
+ANSWER_BATCH confirm 128 192 of 600 seconds 3.28
+ANSWER_BATCH confirm 128 224 of 600 seconds 3.9
+ANSWER_BATCH confirm 128 256 of 600 seconds 3.68
+ANSWER_BATCH confirm 128 288 of 600 seconds 3.44
+ANSWER_BATCH confirm 128 320 of 600 seconds 3.4
+ANSWER_BATCH confirm 128 352 of 600 seconds 3.85
+ANSWER_BATCH confirm 128 384 of 600 seconds 4.51
+ANSWER_BATCH confirm 128 416 of 600 seconds 4.37
+ANSWER_BATCH confirm 128 448 of 600 seconds 3.45
+ANSWER_BATCH confirm 128 480 of 600 seconds 3.98
+ANSWER_BATCH confirm 128 512 of 600 seconds 3.65
+ANSWER_BATCH confirm 128 544 of 600 seconds 3.72
+ANSWER_BATCH confirm 128 576 of 600 seconds 3.73
+ANSWER_BATCH confirm 128 600 of 600 seconds 3.2
+ANSWER_BATCH confirm 256 32 of 600 seconds 4.54
+ANSWER_BATCH confirm 256 64 of 600 seconds 5.24
+ANSWER_BATCH confirm 256 96 of 600 seconds 4.08
+ANSWER_BATCH confirm 256 128 of 600 seconds 4.81
+ANSWER_BATCH confirm 256 160 of 600 seconds 6.25
+ANSWER_BATCH confirm 256 192 of 600 seconds 5.38
+ANSWER_BATCH confirm 256 224 of 600 seconds 4.74
+ANSWER_BATCH confirm 256 256 of 600 seconds 4.46
+ANSWER_BATCH confirm 256 288 of 600 seconds 4.32
+ANSWER_BATCH confirm 256 320 of 600 seconds 4.03
+ANSWER_BATCH confirm 256 352 of 600 seconds 5.2
+ANSWER_BATCH confirm 256 384 of 600 seconds 4.82
+ANSWER_BATCH confirm 256 416 of 600 seconds 5.66
+ANSWER_BATCH confirm 256 448 of 600 seconds 4.22
+ANSWER_BATCH confirm 256 480 of 600 seconds 5.37
+ANSWER_BATCH confirm 256 512 of 600 seconds 4.17
+ANSWER_BATCH confirm 256 544 of 600 seconds 4.04
+ANSWER_BATCH confirm 256 576 of 600 seconds 4.08
+ANSWER_BATCH confirm 256 600 of 600 seconds 3.62
+ANSWER_BATCH confirm 512 32 of 600 seconds 4.69
+ANSWER_BATCH confirm 512 64 of 600 seconds 5.38
+ANSWER_BATCH confirm 512 96 of 600 seconds 4.17
+ANSWER_BATCH confirm 512 128 of 600 seconds 5.06
+ANSWER_BATCH confirm 512 160 of 600 seconds 6.43
+ANSWER_BATCH confirm 512 192 of 600 seconds 4.12
+ANSWER_BATCH confirm 512 224 of 600 seconds 4.72
+ANSWER_BATCH confirm 512 256 of 600 seconds 4.46
+ANSWER_BATCH confirm 512 288 of 600 seconds 4.38
+ANSWER_BATCH confirm 512 320 of 600 seconds 4.17
+ANSWER_BATCH confirm 512 352 of 600 seconds 4.63
+ANSWER_BATCH confirm 512 384 of 600 seconds 4.96
+ANSWER_BATCH confirm 512 416 of 600 seconds 5.61
+ANSWER_BATCH confirm 512 448 of 600 seconds 4.9
+ANSWER_BATCH confirm 512 480 of 600 seconds 5.39
+ANSWER_BATCH confirm 512 512 of 600 seconds 4.89
+ANSWER_BATCH confirm 512 544 of 600 seconds 4.23
+ANSWER_BATCH confirm 512 576 of 600 seconds 4.24
+ANSWER_BATCH confirm 512 600 of 600 seconds 3.64
+ANSWER_BATCH confirm 1024 32 of 600 seconds 4.23
+ANSWER_BATCH confirm 1024 64 of 600 seconds 5.38
+ANSWER_BATCH confirm 1024 96 of 600 seconds 4.38
+ANSWER_BATCH confirm 1024 128 of 600 seconds 5.15
+ANSWER_BATCH confirm 1024 160 of 600 seconds 6.5
+ANSWER_BATCH confirm 1024 192 of 600 seconds 4.13
+ANSWER_BATCH confirm 1024 224 of 600 seconds 4.74
+ANSWER_BATCH confirm 1024 256 of 600 seconds 4.54
+ANSWER_BATCH confirm 1024 288 of 600 seconds 4.38
+ANSWER_BATCH confirm 1024 320 of 600 seconds 4.19
+ANSWER_BATCH confirm 1024 352 of 600 seconds 4.55
+ANSWER_BATCH confirm 1024 384 of 600 seconds 4.95
+ANSWER_BATCH confirm 1024 416 of 600 seconds 5.61
+ANSWER_BATCH confirm 1024 448 of 600 seconds 4.92
+ANSWER_BATCH confirm 1024 480 of 600 seconds 5.39
+ANSWER_BATCH confirm 1024 512 of 600 seconds 4.83
+ANSWER_BATCH confirm 1024 544 of 600 seconds 4.25
+ANSWER_BATCH confirm 1024 576 of 600 seconds 4.23
+ANSWER_BATCH confirm 1024 600 of 600 seconds 3.63
+JUDGE_BATCH confirm 32 of 240
+JUDGE_BATCH confirm 64 of 240
+JUDGE_BATCH confirm 96 of 240
+JUDGE_BATCH confirm 128 of 240
+JUDGE_BATCH confirm 160 of 240
+JUDGE_BATCH confirm 192 of 240
+JUDGE_BATCH confirm 224 of 240
+JUDGE_BATCH confirm 240 of 240
+GENERATION_ALL_DONE
+
+[colab] Stopping session 'b8-132'...
+[colab] Session terminated.
