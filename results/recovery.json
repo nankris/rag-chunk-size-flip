@@ -1,0 +1,12 @@
+{
+  "resumed_utc": "2026-10-18T07:02:06.336965+00:00",
+  "session_missing": true,
+  "saved_pilot_retrieval_sizes": [
+    128,
+    256,
+    512
+  ],
+  "account_balance_on_resume": 131.81,
+  "allocation_refused_utc": "2026-10-18T07:00:00+00:00",
+  "retry_policy": "Every five minutes, up to two hours; do not touch other sessions."
+}
