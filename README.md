@@ -28,3 +28,6 @@ Timing: estimated 100 minutes (setup 15, GPU run 65, evaluation 5, writing 15); 
 
 ### Reconnect / resume
 Run `source /workspace/tools/setup.sh`, `colab usage`, `colab sessions`, then `bash scripts/sync.sh` to inspect this session's PID/log before restarting anything. The launcher refuses to duplicate its existing runner. If a process died, upload the scripts tarball and run `scripts/launch_remote.py`; completed retrieval files, embedding batches and answer IDs are reused. `scripts/repair_jsonl.py` removes only an incomplete final JSONL line before a rerun. Local `results/` remains the durable record across sandbox reboots.
+
+### Recovery note (18 October 2026)
+The original L4 session was absent on resume at approximately 07:00 UTC. Durable local checkpoints contain all frozen dataset records and pilot retrieval for 128, 256 and 512 tokens. The preregistration remains unchanged. Two other account GPU assignments occupy the available slots; allocation attempts for `b8-132` are logged in `results/allocation_attempts.jsonl` and retried every five minutes for up to two hours. Other sessions are never modified. Shared-account balance changes while waiting cannot be attributed to this experiment.
