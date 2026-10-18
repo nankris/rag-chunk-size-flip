@@ -70,3 +70,98 @@ ANSWER_BATCH pilot 256 256 of 300 seconds 9.38
 ANSWER_BATCH pilot 256 288 of 300 seconds 8.12
 ANSWER_BATCH pilot 256 300 of 300 seconds 4.14
 ANSWER_BATCH pilot 512 32 of 300 seconds 15.55
+ANSWER_BATCH pilot 512 64 of 300 seconds 16.77
+ANSWER_BATCH pilot 512 96 of 300 seconds 15.82
+ANSWER_BATCH pilot 512 128 of 300 seconds 15.18
+ANSWER_BATCH pilot 512 160 of 300 seconds 15.8
+ANSWER_BATCH pilot 512 192 of 300 seconds 15.12
+ANSWER_BATCH pilot 512 224 of 300 seconds 16.13
+ANSWER_BATCH pilot 512 256 of 300 seconds 16.68
+ANSWER_BATCH pilot 512 288 of 300 seconds 15.5
+ANSWER_BATCH pilot 512 300 of 300 seconds 6.83
+ANSWER_BATCH pilot 1024 32 of 300 seconds 30.73
+ANSWER_BATCH pilot 1024 64 of 300 seconds 30.57
+ANSWER_BATCH pilot 1024 96 of 300 seconds 32.15
+ANSWER_BATCH pilot 1024 128 of 300 seconds 31.21
+ANSWER_BATCH pilot 1024 160 of 300 seconds 31.8
+ANSWER_BATCH pilot 1024 192 of 300 seconds 32.59
+ANSWER_BATCH pilot 1024 224 of 300 seconds 32.87
+ANSWER_BATCH pilot 1024 256 of 300 seconds 32.63
+ANSWER_BATCH pilot 1024 288 of 300 seconds 31.13
+ANSWER_BATCH pilot 1024 300 of 300 seconds 12.98
+JUDGE_BATCH pilot 32 of 240
+JUDGE_BATCH pilot 64 of 240
+JUDGE_BATCH pilot 96 of 240
+JUDGE_BATCH pilot 128 of 240
+JUDGE_BATCH pilot 160 of 240
+JUDGE_BATCH pilot 192 of 240
+JUDGE_BATCH pilot 224 of 240
+JUDGE_BATCH pilot 240 of 240
+GENERATION_ALL_DONE
+(EngineCore pid=9028) INFO 10-18 07:35:14 [core.py:1178] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=9028) INFO 10-18 07:35:14 [core.py:1297] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=9028) INFO 10-18 07:35:14 [core.py:1328] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=9028) INFO 10-18 07:35:14 [core.py:1191] [shutdown] EngineCore: exiting busy loop
+STAGE_END pilot 2026-10-18T07:35:20+00:00
+STAGE_START confirm 2026-10-18T07:35:20+00:00
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  60%|█████▉    | 185/310 [00:00<00:00, 1847.32it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1909.45it/s]
+EMBED confirm_query_embeddings.npy 0 600
+EMBED confirm_query_embeddings.npy 480 600
+EMBED confirm_embeddings_128.npy 0 9043
+EMBED confirm_embeddings_128.npy 480 9043
+EMBED confirm_embeddings_128.npy 960 9043
+EMBED confirm_embeddings_128.npy 1440 9043
+EMBED confirm_embeddings_128.npy 1920 9043
+EMBED confirm_embeddings_128.npy 2400 9043
+EMBED confirm_embeddings_128.npy 2880 9043
+EMBED confirm_embeddings_128.npy 3360 9043
+EMBED confirm_embeddings_128.npy 3840 9043
+EMBED confirm_embeddings_128.npy 4320 9043
+EMBED confirm_embeddings_128.npy 4800 9043
+EMBED confirm_embeddings_128.npy 5280 9043
+EMBED confirm_embeddings_128.npy 5760 9043
+EMBED confirm_embeddings_128.npy 6240 9043
+EMBED confirm_embeddings_128.npy 6720 9043
+EMBED confirm_embeddings_128.npy 7200 9043
+EMBED confirm_embeddings_128.npy 7680 9043
+EMBED confirm_embeddings_128.npy 8160 9043
+EMBED confirm_embeddings_128.npy 8640 9043
+RETRIEVAL_DONE confirm 128 chunks 9043 seconds 54.85477805137634 recall 0.7941666666666667
+EMBED confirm_embeddings_256.npy 0 6336
+EMBED confirm_embeddings_256.npy 480 6336
+EMBED confirm_embeddings_256.npy 960 6336
+EMBED confirm_embeddings_256.npy 1440 6336
+EMBED confirm_embeddings_256.npy 1920 6336
+EMBED confirm_embeddings_256.npy 2400 6336
+EMBED confirm_embeddings_256.npy 2880 6336
+EMBED confirm_embeddings_256.npy 3360 6336
+EMBED confirm_embeddings_256.npy 3840 6336
+EMBED confirm_embeddings_256.npy 4320 6336
+EMBED confirm_embeddings_256.npy 4800 6336
+EMBED confirm_embeddings_256.npy 5280 6336
+EMBED confirm_embeddings_256.npy 5760 6336
+EMBED confirm_embeddings_256.npy 6240 6336
+RETRIEVAL_DONE confirm 256 chunks 6336 seconds 79.61680603027344 recall 0.7966666666666666
+EMBED confirm_embeddings_512.npy 0 5956
+EMBED confirm_embeddings_512.npy 480 5956
+EMBED confirm_embeddings_512.npy 960 5956
+EMBED confirm_embeddings_512.npy 1440 5956
+EMBED confirm_embeddings_512.npy 1920 5956
+EMBED confirm_embeddings_512.npy 2400 5956
+EMBED confirm_embeddings_512.npy 2880 5956
+EMBED confirm_embeddings_512.npy 3360 5956
+EMBED confirm_embeddings_512.npy 3840 5956
+EMBED confirm_embeddings_512.npy 4320 5956
+EMBED confirm_embeddings_512.npy 4800 5956
+EMBED confirm_embeddings_512.npy 5280 5956
+EMBED confirm_embeddings_512.npy 5760 5956
+RETRIEVAL_DONE confirm 512 chunks 5956 seconds 103.18966841697693 recall 0.795
+EMBED confirm_embeddings_1024.npy 0 5937
+EMBED confirm_embeddings_1024.npy 480 5937
+EMBED confirm_embeddings_1024.npy 960 5937
+EMBED confirm_embeddings_1024.npy 1440 5937
+EMBED confirm_embeddings_1024.npy 1920 5937
+EMBED confirm_embeddings_1024.npy 2400 5937
+EMBED confirm_embeddings_1024.npy 2880 5937

@@ -1,0 +1,7 @@
+{
+  "scope": "Qualitative inspection of pilot disagreements only; not a human validation study or new endpoint",
+  "examples": [
+    {"id": "5730c810aca1c71400fe5aa7", "size": 128, "prediction": "5.", "reference": "five", "f1": 0.0, "judge": "CORRECT", "observation": "Numeric equivalence is missed by lexical normalization."},
+    {"id": "5730042804bcaa1900d77011", "size": 256, "prediction": "The Holocene began about 11,000 years ago.", "reference": "11,700 years ago", "f1": 0.4444444444444444, "judge": "CORRECT", "observation": "The judge accepts an approximate but different date, illustrating permissiveness rather than independent ground truth."}
+  ]
+}

@@ -42,8 +42,10 @@ def main():
   summary[stage]['judge_total']={'n':len(jj),'valid':len(valid),'agreement_f1_half':float(np.mean([r['judge_correct']==int(r['f1']>=.5) for r in valid])),'agreement_em':float(np.mean([r['judge_correct']==r['em'] for r in valid])),'prompt_tokens':sum(r['prompt_tokens'] for r in jj),'completion_tokens':sum(r['completion_tokens'] for r in jj)}
   audit[stage]={'documents':len(data['documents']),'questions':n,'unique_question_ids':len(set(ids)),'dataset_info':data['info'],'sizes':{}}
   for size in SIZES:
-   chunks=json.loads((OUT/f'{stage}_chunks_{size}.json').read_text());counts=np.array([c['n_tokens'] for c in chunks]);rs=rows[size]
-   audit[stage]['sizes'][size]={'chunks':len(chunks),'full_chunks_fraction':float(np.mean(counts==size)),'mean_chunk_tokens':float(counts.mean()),'max_chunk_tokens':int(counts.max()),'truncated_answers':sum(r['finish_reason']=='length' for r in rs),'unique_retrieved_documents_mean':float(np.mean([len(set(r['retrieved_doc_ids'])) for r in rs]))}
+   chunks=json.loads((OUT/f'{stage}_chunks_{size}.json').read_text());doc_chunk_counts={}
+   for ch in chunks:doc_chunk_counts[ch['doc_id']]=doc_chunk_counts.get(ch['doc_id'],0)+1
+   counts=np.array([c['n_tokens'] for c in chunks]);rs=rows[size]
+   audit[stage]['sizes'][size]={'chunks':len(chunks),'single_chunk_documents_fraction':float(np.mean([doc_chunk_counts[d['id']]==1 for d in data['documents']])),'full_chunks_fraction':float(np.mean(counts==size)),'mean_chunk_tokens':float(counts.mean()),'max_chunk_tokens':int(counts.max()),'truncated_answers':sum(r['finish_reason']=='length' for r in rs),'unique_retrieved_documents_mean':float(np.mean([len(set(r['retrieved_doc_ids'])) for r in rs]))}
   a,b=rows[512],rows[1024]
   audit[stage]['identical_512_1024_top5_document_lists_fraction']=float(np.mean([r['retrieved_doc_ids']==s['retrieved_doc_ids'] for r,s in zip(a,b)]))
  (OUT/'summary.json').write_text(json.dumps(summary,indent=2));(OUT/'audit.json').write_text(json.dumps(audit,indent=2))

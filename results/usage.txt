@@ -28,9 +28,3 @@ Active assignments: 1
 Current balance: 131.18 compute units
 Usage rate: 3.08/hr
 Active assignments: 2
-Current balance: 130.77 compute units
-Usage rate: 3.08/hr
-Active assignments: 2
-Current balance: 130.51 compute units
-Usage rate: 3.08/hr
-Active assignments: 2

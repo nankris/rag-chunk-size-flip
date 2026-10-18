@@ -22,6 +22,9 @@ if v=='DISPROVEN':take='The preregistered claim that small chunks improve retrie
 elif v=='PROVEN':take='Small chunks improved retrieval while large chunks improved answer F1 on the fresh confirmation dataset, meeting the fixed test for a reversal. This result applies to the tested top-five policy and corpus, where chunk size also changes the amount of text the model reads.'
 else:take='This run did not resolve the preregistered ranking-flip claim at the chosen confidence and practical thresholds. The observed differences are useful measurements, but they do not establish a reliable universal reversal.'
 source='https://medium.com/illumination/which-rag-chunk-size-is-best-the-answer-flips-depending-on-how-you-score-it-2c3ef424e50c'
+winners={}
+for metric in ['recall','mrr','f1','em']:
+ best=max(val('confirm',sz,metric) for sz in [128,256,512,1024]);winners[metric]=', '.join(str(sz) for sz in [128,256,512,1024] if abs(val('confirm',sz,metric)-best)<1e-12)
 judge_table='| Chunk tokens | Qwen judged accuracy % [95% CI], n=60 |\n|---|---:|\n'
 for sz in ['128','256','512','1024']:
  z=c['judge'][sz];judge_table+=f"| {sz} | {100*z['accuracy']:.1f} {ci(z)} |\n"
@@ -37,6 +40,8 @@ readout=f"""# Experiment 132: Does the RAG chunk-size winner flip?
 
 {table}
 
+Descriptive four-size point-estimate leaders on confirmation: Recall@5 {winners['recall']}; MRR@5 {winners['mrr']}; F1 {winners['f1']}; exact match {winners['em']} tokens. These are not additional significance tests.
+
 Scores are macro averages over questions. All score intervals use 10,000 paired question bootstrap draws, seed 132. The table is also rendered in `figures/table.png` for Substack.
 
 ## Fixed decision rule and confirmation
@@ -44,6 +49,8 @@ Scores are macro averages over questions. All score intervals use 10,000 paired 
 H1 predicted 128 > 1024 on both document Recall@5 and MRR@5. H2 predicted 1024 > 128 on token F1. PROVEN requires every simultaneous lower bound >0 and every point gain >=5 points; DISPROVEN requires any simultaneous upper bound <0; otherwise INCONCLUSIVE. The five-point threshold represents one more useful result per 20 questions. Exact match and judging are secondary.
 
 {contr}
+
+Pilot paired standard deviations were {p['contrasts']['recall']['paired_sd']:.3f} for Recall, {p['contrasts']['mrr']['paired_sd']:.3f} for MRR, and {p['contrasts']['f1']['paired_sd']:.3f} for F1. At the already-fixed confirmation n=600, these imply approximate simultaneous half-widths of {100*p['contrasts']['recall']['planned_confirmation_simultaneous_halfwidth']:.1f}, {100*p['contrasts']['mrr']['planned_confirmation_simultaneous_halfwidth']:.1f}, and {100*p['contrasts']['f1']['planned_confirmation_simultaneous_halfwidth']:.1f} percentage points if paired variability transferred across datasets. They are precision diagnostics, not guaranteed power on another dataset.
 
 Bonferroni 98.333% individual intervals provide at least 95% simultaneous coverage over the three planned directional contrasts. No hypothesis or sample size changed after pilot outcomes. Preregistration commit: `554321b`.
 
@@ -101,6 +108,8 @@ The pilot's retrieval scores favored small chunks. Recall@5 was {pct(val('pilot'
 
 On the fresh HotpotQA sample, Recall@5 was {pct(val('confirm',128,'recall'))}% for 128 tokens and {pct(val('confirm',1024,'recall'))}% for 1024. Reciprocal rank was {pct(val('confirm',128,'mrr'))}% versus {pct(val('confirm',1024,'mrr'))}%. Answer F1 was {pct(val('confirm',128,'f1'))}% versus {pct(val('confirm',1024,'f1'))}%, with exact match at {pct(val('confirm',128,'em'))}% versus {pct(val('confirm',1024,'em'))}%.
 
+Across all four settings, the point-estimate leaders were {winners['recall']} tokens for recall, {winners['mrr']} for reciprocal rank, and {winners['f1']} for answer F1. These descriptive winners do not override the preregistered comparison.
+
 Those are different questions about the same pipeline. Recall measures how much of the relevant document set appears among the five retrieved chunks. Reciprocal rank rewards finding a relevant document earlier. F1 compares words in the generated answer with words in the reference answer.
 
 A crucial limitation is that my retrieval labels identify source documents. A chunk can come from the right document while omitting the sentence needed to answer. That means a strong retrieval score is not a certificate that the generator received the necessary evidence.
@@ -129,7 +138,7 @@ There is another wrinkle. Many HotpotQA documents are short snippets. Increasing
 
 Word overlap can punish an acceptable paraphrase or reward an incomplete answer. I therefore asked Qwen to judge 60 questions per dataset at all four sizes against reference answers.
 
-On confirmation, the judge agreed with the F1-at-least-0.5 classification {100*c['judge_total']['agreement_f1_half']:.1f}% of the time. It agreed with exact match {100*c['judge_total']['agreement_em']:.1f}% of the time. I saved disagreements for inspection. This is a diagnostic from the same model family, not independent human validation.
+On confirmation, the judge agreed with the F1-at-least-0.5 classification {100*c['judge_total']['agreement_f1_half']:.1f}% of the time. It agreed with exact match {100*c['judge_total']['agreement_em']:.1f}% of the time. I saved disagreements for inspection. A pilot disagreement illustrates the gap: “5” versus “five” received zero lexical F1 but was accepted by the judge. Another judge call accepted “about 11,000 years ago” against “11,700 years ago,” showing that model grading can be permissive too. This is a diagnostic from the same model family, not independent human validation.
 
 The remaining limits are substantial: one embedding model, one answer model, one prompt, no overlap, and one fixed top-five policy. The intervals treat questions as the sampling units, even though questions can share documents. They do not measure uncertainty across model training runs. Public benchmark familiarity is also possible.
 
