@@ -36,7 +36,8 @@ def main():
   jj=records(OUT/f'{stage}_judge.jsonl')
   for size in SIZES:
    j=[r for r in jj if r['size']==size];valid=[r for r in j if r['judge_correct'] is not None]
-   summary[stage]['judge'][size]={'n':len(j),'valid':len(valid),'accuracy':float(np.mean([r['judge_correct'] for r in valid])),'agreement_f1_half':float(np.mean([r['judge_correct']==int(r['f1']>=.5) for r in valid])),'agreement_em':float(np.mean([r['judge_correct']==r['em'] for r in valid]))}
+   jix=np.random.default_rng(132).integers(len(valid),size=(10000,len(valid)))
+   summary[stage]['judge'][size]={'ci95':interval(np.array([r['judge_correct'] for r in valid]),jix),'n':len(j),'valid':len(valid),'accuracy':float(np.mean([r['judge_correct'] for r in valid])),'agreement_f1_half':float(np.mean([r['judge_correct']==int(r['f1']>=.5) for r in valid])),'agreement_em':float(np.mean([r['judge_correct']==r['em'] for r in valid]))}
   valid=[r for r in jj if r['judge_correct'] is not None]
   summary[stage]['judge_total']={'n':len(jj),'valid':len(valid),'agreement_f1_half':float(np.mean([r['judge_correct']==int(r['f1']>=.5) for r in valid])),'agreement_em':float(np.mean([r['judge_correct']==r['em'] for r in valid])),'prompt_tokens':sum(r['prompt_tokens'] for r in jj),'completion_tokens':sum(r['completion_tokens'] for r in jj)}
   audit[stage]={'documents':len(data['documents']),'questions':n,'unique_question_ids':len(set(ids)),'dataset_info':data['info'],'sizes':{}}

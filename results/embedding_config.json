@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "tokenizer_revision": null,
+  "dtype": "float16",
+  "pooling": "last token",
+  "normalization": "L2",
+  "attention": "sdpa",
+  "chunk_tokenizer": "Qwen/Qwen3-4B"
+}

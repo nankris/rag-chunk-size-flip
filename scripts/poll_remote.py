@@ -4,7 +4,7 @@ p=Path('/content/b8-132')
 print('UTC',time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()))
 if (p/'job.pid').exists():
  pid=int((p/'job.pid').read_text());print(subprocess.getoutput(f'ps -p {pid} -o pid,etime,args'))
-for name in ['run.log'] + ([] if (p/'results/pilot_data.json').exists() else ['results/install.log']):
+for name in ['run.log'] + ([] if (p/'run.log').exists() and 'STAGE_START' in (p/'run.log').read_text(errors='replace') else ['results/install.log']):
  f=p/name
  if f.exists():print(name,'\n','\n'.join(f.read_text(errors='replace').splitlines()[-12:]))
 print(subprocess.getoutput('nvidia-smi --query-gpu=name,memory.used,utilization.gpu --format=csv'))
