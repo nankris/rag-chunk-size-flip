@@ -7,5 +7,6 @@
     "total": 100
   },
   "start_ist": "2026-10-18T11:45:22.958477+05:30",
-  "GPU": "L4 requested"
+  "GPU": "L4 requested",
+  "setup_scripts_ready_ist": "2026-10-18T11:48:53.688953+05:30"
 }
