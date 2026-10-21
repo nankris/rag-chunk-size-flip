@@ -1,0 +1,8 @@
+{
+  "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+  "tokenizer": "Qwen/Qwen3-4B",
+  "dtype": "float16",
+  "pooling": "last token",
+  "normalization": "L2",
+  "budget_tokens": 1024
+}

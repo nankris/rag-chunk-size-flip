@@ -1,0 +1,20 @@
+{
+  "estimated_minutes": {
+    "setup": 20,
+    "training_eval": 65,
+    "writeup": 35,
+    "total": 120
+  },
+  "start_ist": "2026-10-20 05:23:19 IST",
+  "end_ist": "2026-10-20 09:45:00 IST",
+  "actual_minutes": {
+    "setup": 20,
+    "gpu_run": 205,
+    "eval": 15,
+    "writeup": 22,
+    "total": 262
+  },
+  "gpu": "NVIDIA L4",
+  "colab_cu_used": 4.1,
+  "colab_cu_account_delta_upper_bound": 6.05
+}

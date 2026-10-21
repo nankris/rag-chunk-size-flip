@@ -1,0 +1,72 @@
+{
+  "pilot": {
+    "documents": 4412,
+    "questions": 300,
+    "unique_question_ids": 300,
+    "sizes": {
+      "128": {
+        "chunks": 6821,
+        "single_chunk_documents_fraction": 0.6765639165911151,
+        "mean_chunk_tokens": 89.30186189708255,
+        "max_chunk_tokens": 128,
+        "unique_retrieved_documents_mean": 9.39
+      },
+      "256": {
+        "chunks": 5038,
+        "single_chunk_documents_fraction": 0.9129646418857661,
+        "mean_chunk_tokens": 120.9067090115125,
+        "max_chunk_tokens": 256,
+        "unique_retrieved_documents_mean": 7.56
+      },
+      "512": {
+        "chunks": 4565,
+        "single_chunk_documents_fraction": 0.9768812330009066,
+        "mean_chunk_tokens": 133.43439211391018,
+        "max_chunk_tokens": 512,
+        "unique_retrieved_documents_mean": 6.96
+      },
+      "1024": {
+        "chunks": 4445,
+        "single_chunk_documents_fraction": 0.9938803263825929,
+        "mean_chunk_tokens": 137.03667041619798,
+        "max_chunk_tokens": 1024,
+        "unique_retrieved_documents_mean": 6.833333333333333
+      }
+    }
+  },
+  "confirm": {
+    "documents": 17629,
+    "questions": 2417,
+    "unique_question_ids": 2417,
+    "sizes": {
+      "128": {
+        "chunks": 27740,
+        "single_chunk_documents_fraction": 0.694537409949515,
+        "mean_chunk_tokens": 90.19015861571738,
+        "max_chunk_tokens": 128,
+        "unique_retrieved_documents_mean": 8.957385188249896
+      },
+      "256": {
+        "chunks": 20441,
+        "single_chunk_documents_fraction": 0.9249532021101594,
+        "mean_chunk_tokens": 122.39494153906365,
+        "max_chunk_tokens": 256,
+        "unique_retrieved_documents_mean": 6.975175837815474
+      },
+      "512": {
+        "chunks": 18516,
+        "single_chunk_documents_fraction": 0.975268024278178,
+        "mean_chunk_tokens": 135.1196262691726,
+        "max_chunk_tokens": 512,
+        "unique_retrieved_documents_mean": 6.298303682250724
+      },
+      "1024": {
+        "chunks": 17920,
+        "single_chunk_documents_fraction": 0.989108854728005,
+        "mean_chunk_tokens": 139.61356026785714,
+        "max_chunk_tokens": 1024,
+        "unique_retrieved_documents_mean": 6.162184526272238
+      }
+    }
+  }
+}
