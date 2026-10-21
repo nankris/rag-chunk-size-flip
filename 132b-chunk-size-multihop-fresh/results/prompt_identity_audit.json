@@ -1,0 +1,27 @@
+{
+  "distinct_context_questions": 20740,
+  "logical_records": 28800,
+  "by_generation_order": [
+    {
+      "chunk_limit": 128,
+      "records": 7200,
+      "additional_distinct_context_questions": 7200
+    },
+    {
+      "chunk_limit": 1024,
+      "records": 7200,
+      "additional_distinct_context_questions": 6795
+    },
+    {
+      "chunk_limit": 256,
+      "records": 7200,
+      "additional_distinct_context_questions": 5121
+    },
+    {
+      "chunk_limit": 512,
+      "records": 7200,
+      "additional_distinct_context_questions": 1624
+    }
+  ],
+  "note": "Counted from frozen retrieval only, independently of answer scores. Identical question plus passage serialization implies identical full reader prompt."
+}

@@ -1,0 +1,10 @@
+{
+  "historical_n": 600,
+  "historical_mean": 0.02102679749635374,
+  "historical_paired_sd": 0.2583962030330833,
+  "family_size": 6,
+  "effect": 0.015,
+  "power": 0.8,
+  "formula_n": 3594,
+  "registered_n": 3600
+}

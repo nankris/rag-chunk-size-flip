@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "blog_words": 1511,
+  "verdict": "INCONCLUSIVE",
+  "figures": {
+    "answer_f1.png": {
+      "pixels": [
+        1800,
+        720
+      ],
+      "dpi": [
+        150.01239999999999,
+        150.01239999999999
+      ]
+    },
+    "effects_and_tokens.png": {
+      "pixels": [
+        1800,
+        750
+      ],
+      "dpi": [
+        150.01239999999999,
+        150.01239999999999
+      ]
+    },
+    "table.png": {
+      "pixels": [
+        1950,
+        1050
+      ],
+      "dpi": [
+        150.01239999999999,
+        150.01239999999999
+      ]
+    },
+    "diagram.png": {
+      "pixels": [
+        2340,
+        920
+      ],
+      "dpi": null
+    }
+  },
+  "sha256": {
+    "README.md": "152e80474533ba97fc932b73ee2dd26c8f731f79b329aedefea736b2cc4b553a",
+    "writeup.md": "4f836da8c006cfc7b3557a80fbf2f179320e986619b1ba53c8fb5caf81048bd2",
+    "blog.md": "2b62e2c202f98b85942010aeb8f54dfaca9a5f7b9173decd8fd5ef1065be3860",
+    "figures/answer_f1.png": "a0a8946a0622c6acc2bb7646917a9081e3a8893e243963f5e260a49b4f7aa11d",
+    "figures/effects_and_tokens.png": "21d4daae15bf740a23e74a17d71b68d7b92cbb683925e28b4ae868a9f9b8b7bb",
+    "figures/table.png": "6215e8e66365cd2ddf49ac7a00a9e968a9d2630dee1e445c76ca070f7eef59a2",
+    "figures/diagram.png": "b2b006938b86e12d2864d8eea8148488d705c3919f75c05c9fe203902bab4847",
+    "figures/diagram.excalidraw": "9ec160ac73951fdfae776b8361b99262e1206bdab4912c75b2c67724c3d76f6b",
+    "figures/colab_run.txt": "dcac54fa7e0a7b43f3d0fd176f7712005539183429332b2e3390a12f551fdd5e",
+    "results/summary.json": "4be33cbb4bc9629048d3b3b3316a53f31eb59b185410e36b37c8c72ea277ea6b",
+    "results/validation.json": "0aee46f770c66077f420b694df59506b707c2761b9a5f14c69f6fea25ff0bb86",
+    "results/usage_final.json": "f69d540d328bb96d31dc65290671f29ea2f69d96eac4d84f8f0b5b315f5e8417",
+    "results/timing.json": "103fab87f2c930764998abeaa0e697de466c49d93a52cd46e1812ba3882df18e"
+  }
+}

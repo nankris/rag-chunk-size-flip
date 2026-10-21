@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "pooling": "last token",
+  "normalization": "L2",
+  "dtype": "float16",
+  "index": "FAISS IndexFlatIP",
+  "chunk_tokenizer": "Qwen/Qwen3-8B"
+}

@@ -1,0 +1,216 @@
+Current balance: 124.57 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 6400 of 28800 unique_generated 64 seconds 12.14
+ANSWER_BATCH 6464 of 28800 unique_generated 64 seconds 11.58
+ANSWER_BATCH 6528 of 28800 unique_generated 64 seconds 11.6
+ANSWER_BATCH 6592 of 28800 unique_generated 64 seconds 12.24
+ANSWER_BATCH 6656 of 28800 unique_generated 64 seconds 13.56
+ANSWER_BATCH 6720 of 28800 unique_generated 64 seconds 14.78
+ANSWER_BATCH 6784 of 28800 unique_generated 64 seconds 12.66
+ANSWER_BATCH 6848 of 28800 unique_generated 64 seconds 13.67
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 124.57 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 7104 of 28800 unique_generated 64 seconds 11.96
+ANSWER_BATCH 7168 of 28800 unique_generated 64 seconds 11.42
+ANSWER_BATCH 7232 of 28800 unique_generated 61 seconds 13.49
+ANSWER_BATCH 7296 of 28800 unique_generated 61 seconds 11.57
+ANSWER_BATCH 7360 of 28800 unique_generated 59 seconds 11.55
+ANSWER_BATCH 7424 of 28800 unique_generated 62 seconds 12.33
+ANSWER_BATCH 7488 of 28800 unique_generated 58 seconds 13.1
+ANSWER_BATCH 7552 of 28800 unique_generated 63 seconds 14.95
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 124.31 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 7808 of 28800 unique_generated 62 seconds 14.48
+ANSWER_BATCH 7872 of 28800 unique_generated 60 seconds 11.88
+ANSWER_BATCH 7936 of 28800 unique_generated 62 seconds 11.5
+ANSWER_BATCH 8000 of 28800 unique_generated 61 seconds 11.97
+ANSWER_BATCH 8064 of 28800 unique_generated 59 seconds 11.9
+ANSWER_BATCH 8128 of 28800 unique_generated 62 seconds 12.24
+ANSWER_BATCH 8192 of 28800 unique_generated 61 seconds 11.79
+ANSWER_BATCH 8256 of 28800 unique_generated 63 seconds 11.35
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 124.31 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 8576 of 28800 unique_generated 61 seconds 12.23
+ANSWER_BATCH 8640 of 28800 unique_generated 58 seconds 11.35
+ANSWER_BATCH 8704 of 28800 unique_generated 61 seconds 11.79
+ANSWER_BATCH 8768 of 28800 unique_generated 59 seconds 11.95
+ANSWER_BATCH 8832 of 28800 unique_generated 61 seconds 12.83
+ANSWER_BATCH 8896 of 28800 unique_generated 62 seconds 14.69
+ANSWER_BATCH 8960 of 28800 unique_generated 59 seconds 12.47
+ANSWER_BATCH 9024 of 28800 unique_generated 60 seconds 11.88
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 124.05 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 9536 of 28800 unique_generated 60 seconds 11.89
+ANSWER_BATCH 9600 of 28800 unique_generated 60 seconds 12.07
+ANSWER_BATCH 9664 of 28800 unique_generated 59 seconds 12.35
+ANSWER_BATCH 9728 of 28800 unique_generated 60 seconds 12.46
+ANSWER_BATCH 9792 of 28800 unique_generated 63 seconds 12.84
+ANSWER_BATCH 9856 of 28800 unique_generated 59 seconds 11.91
+ANSWER_BATCH 9920 of 28800 unique_generated 57 seconds 13.18
+ANSWER_BATCH 9984 of 28800 unique_generated 60 seconds 11.81
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 124.05 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 10304 of 28800 unique_generated 59 seconds 11.55
+ANSWER_BATCH 10368 of 28800 unique_generated 61 seconds 12.05
+ANSWER_BATCH 10432 of 28800 unique_generated 61 seconds 11.92
+ANSWER_BATCH 10496 of 28800 unique_generated 59 seconds 12.13
+ANSWER_BATCH 10560 of 28800 unique_generated 62 seconds 12.94
+ANSWER_BATCH 10624 of 28800 unique_generated 56 seconds 12.23
+ANSWER_BATCH 10688 of 28800 unique_generated 60 seconds 15.22
+ANSWER_BATCH 10752 of 28800 unique_generated 63 seconds 12.19
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 123.79 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 11072 of 28800 unique_generated 59 seconds 12.12
+ANSWER_BATCH 11136 of 28800 unique_generated 60 seconds 14.99
+ANSWER_BATCH 11200 of 28800 unique_generated 59 seconds 12.18
+ANSWER_BATCH 11264 of 28800 unique_generated 59 seconds 11.39
+ANSWER_BATCH 11328 of 28800 unique_generated 56 seconds 11.94
+ANSWER_BATCH 11392 of 28800 unique_generated 60 seconds 11.91
+ANSWER_BATCH 11456 of 28800 unique_generated 61 seconds 12.26
+ANSWER_BATCH 11520 of 28800 unique_generated 61 seconds 11.73
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 123.79 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 11776 of 28800 unique_generated 61 seconds 11.84
+ANSWER_BATCH 11840 of 28800 unique_generated 59 seconds 11.47
+ANSWER_BATCH 11904 of 28800 unique_generated 61 seconds 12.2
+ANSWER_BATCH 11968 of 28800 unique_generated 64 seconds 11.95
+ANSWER_BATCH 12032 of 28800 unique_generated 59 seconds 12.82
+ANSWER_BATCH 12096 of 28800 unique_generated 60 seconds 13.15
+ANSWER_BATCH 12160 of 28800 unique_generated 59 seconds 12.13
+ANSWER_BATCH 12224 of 28800 unique_generated 61 seconds 11.66
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 123.54 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 12928 of 28800 unique_generated 62 seconds 12.39
+ANSWER_BATCH 12992 of 28800 unique_generated 61 seconds 11.71
+ANSWER_BATCH 13056 of 28800 unique_generated 62 seconds 12.44
+ANSWER_BATCH 13120 of 28800 unique_generated 60 seconds 11.8
+ANSWER_BATCH 13184 of 28800 unique_generated 59 seconds 12.6
+ANSWER_BATCH 13248 of 28800 unique_generated 62 seconds 12.18
+ANSWER_BATCH 13312 of 28800 unique_generated 63 seconds 13.04
+ANSWER_BATCH 13376 of 28800 unique_generated 63 seconds 12.13
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 123.28 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 13888 of 28800 unique_generated 61 seconds 15.53
+ANSWER_BATCH 13952 of 28800 unique_generated 62 seconds 12.01
+ANSWER_BATCH 14016 of 28800 unique_generated 57 seconds 11.8
+ANSWER_BATCH 14080 of 28800 unique_generated 60 seconds 11.64
+ANSWER_BATCH 14144 of 28800 unique_generated 61 seconds 11.49
+ANSWER_BATCH 14208 of 28800 unique_generated 60 seconds 14.85
+ANSWER_BATCH 14272 of 28800 unique_generated 61 seconds 12.24
+ANSWER_BATCH 14336 of 28800 unique_generated 60 seconds 12.25
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 123.28 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+ANSWER_BATCH 15040 of 28800 unique_generated 47 seconds 11.75
+ANSWER_BATCH 15104 of 28800 unique_generated 42 seconds 8.96
+ANSWER_BATCH 15168 of 28800 unique_generated 40 seconds 8.99
+ANSWER_BATCH 15232 of 28800 unique_generated 47 seconds 10.2
+ANSWER_BATCH 15296 of 28800 unique_generated 46 seconds 9.84
+ANSWER_BATCH 15360 of 28800 unique_generated 53 seconds 10.85
+ANSWER_BATCH 15424 of 28800 unique_generated 48 seconds 10.41
+ANSWER_BATCH 15488 of 28800 unique_generated 52 seconds 10.03
+GPU snapshot: |   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+SNAPSHOT_READY_132b
+
+SNAPSHOT_SAVED
+Current balance: 123.02 compute units
+Usage rate: 3.08/hr
+Active assignments: 2
+
+Traceback (most recent call last):
+  File "/workspace/work/tig/132b-chunk-size-multihop-fresh/scripts/sync.py", line 8, in call
+    try:return subprocess.run(['colab',*args],text=True,capture_output=True,check=True,timeout=35 if args[0]=='exec' else 90,**kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/local/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['colab', 'exec', '-s', 'b9-132b', '--timeout', '60']' timed out after 35 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/work/tig/132b-chunk-size-multihop-fresh/scripts/sync.py", line 34, in <module>
+    r=call(['exec','-s','b9-132b','--timeout','60'],input=code);print(r.stdout)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/work/tig/132b-chunk-size-multihop-fresh/scripts/sync.py", line 15, in call
+    subprocess.run(['colab','restart-kernel','-s','b9-132b'],check=True,capture_output=True,text=True,timeout=45)
+  File "/usr/local/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/local/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['colab', 'restart-kernel', '-s', 'b9-132b']' timed out after 45 seconds
+SYNC_FAILED_WILL_RETRY 1

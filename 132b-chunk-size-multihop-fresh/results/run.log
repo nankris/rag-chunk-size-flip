@@ -1,0 +1,939 @@
+Sun Oct 18 17:49:22 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+| N/A   44C    P8             13W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+2026-10-18T17:49:22+00:00
+STAGE_START prepare 2026-10-18T17:49:24+00:00
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating validation split:   0%|          | 0/12576 [00:00<?, ? examples/s]Generating validation split:  40%|███▉      | 5000/12576 [00:00<00:00, 37063.75 examples/s]Generating validation split: 100%|██████████| 12576/12576 [00:00<00:00, 56887.37 examples/s]Generating validation split: 100%|██████████| 12576/12576 [00:00<00:00, 53397.14 examples/s]
+DATA_FROZEN 3600 19945 a27bf0559eb4077c401e7025ee74459fdb15241627d1a4947fe9e493f0690ad0
+STAGE_END prepare 2026-10-18T17:50:09+00:00
+STAGE_START retrieve 2026-10-18T17:50:09+00:00
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  36%|███▋      | 113/310 [00:00<00:00, 1100.14it/s]Loading weights:  94%|█████████▍| 291/310 [00:00<00:00, 1481.77it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1499.51it/s]
+Traceback (most recent call last):
+  File "/content/132b/scripts/retrieve.py", line 11, in <module>
+    (P/'embedding_config.json').write_text(json.dumps({'model':'Qwen/Qwen3-Embedding-0.6B','revision':model.config._commit_hash,'pooling':'last token','normalization':'L2','dtype':'float16','index':'FAISS IndexFlatIP','chunk_tokenizer':'Qwen/Qwen3-8B'},indent=2))
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py", line 525, in __getattribute__
+    return super().__getattribute__(key)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 312, in __getattribute__
+    return super().__getattribute__(key)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+AttributeError: 'Qwen3Config' object has no attribute '_commit_hash'
+Sun Oct 18 17:51:15 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+| N/A   45C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+2026-10-18T17:51:16+00:00
+STAGE_START prepare 2026-10-18T17:51:17+00:00
+STAGE_END prepare 2026-10-18T17:51:27+00:00
+STAGE_START retrieve 2026-10-18T17:51:27+00:00
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 177/310 [00:00<00:00, 1733.62it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1816.42it/s]
+EMBED query_embeddings 0 3600
+EMBED query_embeddings 960 3600
+EMBED query_embeddings 1920 3600
+EMBED query_embeddings 2880 3600
+EMBED embeddings_128 0 28659
+EMBED embeddings_128 960 28659
+EMBED embeddings_128 1920 28659
+EMBED embeddings_128 2880 28659
+EMBED embeddings_128 3840 28659
+EMBED embeddings_128 4800 28659
+EMBED embeddings_128 5760 28659
+EMBED embeddings_128 6720 28659
+EMBED embeddings_128 7680 28659
+EMBED embeddings_128 8640 28659
+EMBED embeddings_128 9600 28659
+EMBED embeddings_128 10560 28659
+EMBED embeddings_128 11520 28659
+EMBED embeddings_128 12480 28659
+EMBED embeddings_128 13440 28659
+EMBED embeddings_128 14400 28659
+EMBED embeddings_128 15360 28659
+EMBED embeddings_128 16320 28659
+EMBED embeddings_128 17280 28659
+EMBED embeddings_128 18240 28659
+EMBED embeddings_128 19200 28659
+EMBED embeddings_128 20160 28659
+EMBED embeddings_128 21120 28659
+EMBED embeddings_128 22080 28659
+EMBED embeddings_128 23040 28659
+EMBED embeddings_128 24000 28659
+EMBED embeddings_128 24960 28659
+EMBED embeddings_128 25920 28659
+EMBED embeddings_128 26880 28659
+EMBED embeddings_128 27840 28659
+RETRIEVAL_DONE 128 chunks 28659 seconds 181.51
+EMBED embeddings_256 0 22392
+EMBED embeddings_256 960 22392
+EMBED embeddings_256 1920 22392
+EMBED embeddings_256 2880 22392
+EMBED embeddings_256 3840 22392
+EMBED embeddings_256 4800 22392
+EMBED embeddings_256 5760 22392
+EMBED embeddings_256 6720 22392
+EMBED embeddings_256 7680 22392
+EMBED embeddings_256 8640 22392
+EMBED embeddings_256 9600 22392
+EMBED embeddings_256 10560 22392
+EMBED embeddings_256 11520 22392
+EMBED embeddings_256 12480 22392
+EMBED embeddings_256 13440 22392
+EMBED embeddings_256 14400 22392
+EMBED embeddings_256 15360 22392
+EMBED embeddings_256 16320 22392
+EMBED embeddings_256 17280 22392
+EMBED embeddings_256 18240 22392
+EMBED embeddings_256 19200 22392
+EMBED embeddings_256 20160 22392
+EMBED embeddings_256 21120 22392
+EMBED embeddings_256 22080 22392
+RETRIEVAL_DONE 256 chunks 22392 seconds 323.89
+EMBED embeddings_512 0 20371
+EMBED embeddings_512 960 20371
+EMBED embeddings_512 1920 20371
+EMBED embeddings_512 2880 20371
+EMBED embeddings_512 3840 20371
+EMBED embeddings_512 4800 20371
+EMBED embeddings_512 5760 20371
+EMBED embeddings_512 6720 20371
+EMBED embeddings_512 7680 20371
+EMBED embeddings_512 8640 20371
+EMBED embeddings_512 9600 20371
+EMBED embeddings_512 10560 20371
+EMBED embeddings_512 11520 20371
+EMBED embeddings_512 12480 20371
+EMBED embeddings_512 13440 20371
+Terminated
+
+OPERATIONAL_RESTART: length-sorted final embedding pass, original ordering restored before FAISS; completed batches retained
+Sun Oct 18 18:06:43 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      Off |   00000000:00:03.0 Off |                    0 |
+| N/A   74C    P0             59W /   72W |       0MiB /  23034MiB |     10%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+2026-10-18T18:06:43+00:00
+STAGE_START prepare 2026-10-18T18:06:44+00:00
+STAGE_END prepare 2026-10-18T18:06:54+00:00
+STAGE_START retrieve 2026-10-18T18:06:54+00:00
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 183/310 [00:00<00:00, 1825.30it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1849.69it/s]
+EMBED embeddings_512 0 20371
+EMBED embeddings_512 960 20371
+EMBED embeddings_512 1920 20371
+EMBED embeddings_512 2880 20371
+EMBED embeddings_512 3840 20371
+EMBED embeddings_512 4800 20371
+EMBED embeddings_512 5760 20371
+EMBED embeddings_512 6720 20371
+EMBED embeddings_512 7680 20371
+EMBED embeddings_512 8640 20371
+EMBED embeddings_512 9600 20371
+EMBED embeddings_512 10560 20371
+EMBED embeddings_512 11520 20371
+EMBED embeddings_512 12480 20371
+EMBED embeddings_512 13440 20371
+EMBED embeddings_512 14400 20371
+EMBED embeddings_512 15360 20371
+EMBED embeddings_512 16320 20371
+EMBED embeddings_512 17280 20371
+EMBED embeddings_512 18240 20371
+EMBED embeddings_512 19200 20371
+EMBED embeddings_512 20160 20371
+RETRIEVAL_DONE 512 chunks 20371 seconds 180.14
+EMBED embeddings_1024 0 19959
+EMBED embeddings_1024 960 19959
+EMBED embeddings_1024 1920 19959
+EMBED embeddings_1024 2880 19959
+EMBED embeddings_1024 3840 19959
+EMBED embeddings_1024 4800 19959
+EMBED embeddings_1024 5760 19959
+EMBED embeddings_1024 6720 19959
+EMBED embeddings_1024 7680 19959
+EMBED embeddings_1024 8640 19959
+EMBED embeddings_1024 9600 19959
+EMBED embeddings_1024 10560 19959
+EMBED embeddings_1024 11520 19959
+EMBED embeddings_1024 12480 19959
+EMBED embeddings_1024 13440 19959
+EMBED embeddings_1024 14400 19959
+EMBED embeddings_1024 15360 19959
+EMBED embeddings_1024 16320 19959
+EMBED embeddings_1024 17280 19959
+EMBED embeddings_1024 18240 19959
+EMBED embeddings_1024 19200 19959
+RETRIEVAL_DONE 1024 chunks 19959 seconds 131.63
+RETRIEVAL_ALL_DONE
+STAGE_END retrieve 2026-10-18T18:12:21+00:00
+STAGE_START generate 2026-10-18T18:12:21+00:00
+(MainProcess pid=8585) INFO 10-18 18:12:38 [api_utils.py:286] non-default args: {'dtype': 'half', 'seed': 1320132, 'max_model_len': 6500, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.91, 'max_num_seqs': 32, 'disable_log_stats': True, 'enforce_eager': True, 'model': 'Qwen/Qwen3-8B'}
+(MainProcess pid=8585) INFO 10-18 18:12:54 [model.py:733] Resolved architecture: Qwen3ForCausalLM
+(MainProcess pid=8585) WARNING 10-18 18:12:54 [model.py:2498] Casting torch.bfloat16 to torch.float16.
+(MainProcess pid=8585) INFO 10-18 18:12:54 [model.py:2152] Using max model len 6500
+(MainProcess pid=8585) INFO 10-18 18:12:54 [scheduler.py:307] Chunked prefill is enabled with max_num_batched_tokens=8192.
+(MainProcess pid=8585) WARNING 10-18 18:12:54 [vllm.py:1703] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(MainProcess pid=8585) WARNING 10-18 18:12:54 [vllm.py:1727] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(MainProcess pid=8585) INFO 10-18 18:12:54 [kernel.py:467] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=8585) INFO 10-18 18:12:54 [vllm.py:1929] Cudagraph is disabled under eager mode
+(MainProcess pid=8585) INFO 10-18 18:12:54 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 10 files:  60%|██████    | 6/10 [00:00<00:00, 22.94it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 32.79it/s]
+(EngineCore pid=8878) INFO 10-18 18:13:10 [core.py:133] Initializing a V1 LLM engine (v0.32.0) with config: model='Qwen/Qwen3-8B', speculative_config=None, tokenizer='Qwen/Qwen3-8B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=main, tokenizer_revision=main, trust_remote_code=False, dtype=torch.float16, max_seq_len=6500, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=1320132, served_model_name=Qwen/Qwen3-8B, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=8878) INFO 10-18 18:13:11 [parallel_state.py:1906] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_d82510c5bdae4c11a88751531ad97c53 backend=nccl
+(EngineCore pid=8878) INFO 10-18 18:13:11 [parallel_state.py:2350] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=8878) INFO 10-18 18:13:11 [gpu_worker.py:518] Using V2 Model Runner
+(EngineCore pid=8878) INFO 10-18 18:13:12 [model_runner.py:392] Loading model from scratch...
+(EngineCore pid=8878) INFO 10-18 18:13:13 [cuda.py:506] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=8878) INFO 10-18 18:13:13 [flash_attn.py:1117] Using FlashAttention version 2
+(EngineCore pid=8878) INFO 10-18 18:13:13 [base_loader.py:82] Initializing model took 1.288786 seconds
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+(EngineCore pid=8878) INFO 10-18 18:14:01 [weight_utils.py:532] Time spent downloading weights for Qwen/Qwen3-8B: 46.665398 seconds
+(EngineCore pid=8878) INFO 10-18 18:14:01 [weight_utils.py:1108] Filesystem type for checkpoints: OVERLAY. Checkpoint size: 15.26 GiB. Available RAM: 48.12 GiB.
+(EngineCore pid=8878) INFO 10-18 18:14:01 [weight_utils.py:1131] Auto-prefetch is disabled because the filesystem (OVERLAY) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
+(EngineCore pid=8878) WARNING 10-18 18:14:01 [utils.py:333] Attempted to load weight embed_tokens.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:01 [utils.py:333] Attempted to load weight layers.0.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:01 [utils.py:333] Attempted to load weight layers.0.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:01 [utils.py:333] Attempted to load weight layers.0.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:01 [utils.py:333] Attempted to load weight layers.0.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:01 [utils.py:333] Attempted to load weight layers.0.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.0.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.1.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.1.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.1.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.1.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.1.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.1.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.2.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.2.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.2.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.2.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.2.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.2.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.3.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.3.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.3.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.3.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.3.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.3.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.4.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.4.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.4.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.4.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.4.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.4.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.5.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.5.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.5.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.5.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.5.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.5.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.6.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:02 [utils.py:333] Attempted to load weight layers.6.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.6.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.6.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.6.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.6.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:01<00:07,  1.84s/it]
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.10.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.10.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.10.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.10.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.10.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.10.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.11.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.11.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.11.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.11.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.11.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.11.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.12.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.12.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.12.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.12.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.12.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.12.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.13.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.13.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.13.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.13.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.13.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.13.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:03 [utils.py:333] Attempted to load weight layers.14.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.14.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.14.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.14.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.14.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.14.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.15.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.15.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.15.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.15.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.15.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.15.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.16.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.16.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.16.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.16.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.16.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.16.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.17.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.17.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.17.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.7.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.7.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.7.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.7.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.7.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.7.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.8.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.8.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.8.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.8.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.8.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.8.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.9.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:04 [utils.py:333] Attempted to load weight layers.9.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.9.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.9.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.9.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.9.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:03<00:05,  1.94s/it]
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.17.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.17.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.17.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.18.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.18.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.18.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.18.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.18.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.18.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.19.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.19.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.19.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.19.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.19.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.19.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.20.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.20.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.20.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.20.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.20.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.20.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.21.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:05 [utils.py:333] Attempted to load weight layers.21.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.21.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.21.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.21.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.21.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.22.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.22.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.22.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.22.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.22.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.22.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.23.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.23.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.23.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.23.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.23.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.23.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.24.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.24.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.24.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.24.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.24.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.24.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.25.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.25.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.25.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.25.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.25.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.25.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.26.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:06 [utils.py:333] Attempted to load weight layers.26.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.26.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.26.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.26.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.26.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.27.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.27.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.27.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:05<00:03,  1.99s/it]
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.27.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.27.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.27.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.28.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.28.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.28.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.28.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.28.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.28.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.29.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.29.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.29.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.29.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.29.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.29.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.30.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.30.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.30.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.30.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.30.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.30.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.31.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:07 [utils.py:333] Attempted to load weight layers.31.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.31.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.31.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.31.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.31.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.32.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.32.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.32.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.32.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.32.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.32.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.33.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.33.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.33.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.33.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.33.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.33.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.34.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.34.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.34.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.34.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.34.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.34.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.35.input_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.35.mlp.down_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.35.post_attention_layernorm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.35.self_attn.k_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.35.self_attn.o_proj.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight layers.35.self_attn.q_norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight norm.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:07<00:01,  1.85s/it]
+(EngineCore pid=8878) WARNING 10-18 18:14:08 [utils.py:333] Attempted to load weight lm_head.weight with dtype torch.bfloat16 into parameter with dtype torch.float16
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:08<00:00,  1.51s/it]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:08<00:00,  1.69s/it]
+
+(EngineCore pid=8878) INFO 10-18 18:14:09 [default_loader.py:501] Loading weights took 8.48 seconds
+(EngineCore pid=8878) INFO 10-18 18:14:11 [model_runner.py:424] Model loading took 15.27 GiB memory and 59.492317 seconds
+(EngineCore pid=8878) INFO 10-18 18:14:11 [topk_topp_sampler.py:124] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=8878) INFO 10-18 18:14:11 [torch_utils.py:295] Reducing Torch threads from 6 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=8878) INFO 10-18 18:14:11 [utils.py:347] Using LBNHC KV cache layout.
+(EngineCore pid=8878) INFO 10-18 18:14:17 [gpu_worker.py:759] Available KV cache memory: 3.86 GiB
+(EngineCore pid=8878) INFO 10-18 18:14:17 [kv_cache_utils.py:2327] GPU KV cache size: 28,076 tokens, Maximum concurrency for 6,500 tokens per request: 4.32x
+(EngineCore pid=8878) INFO 10-18 18:14:17 [gpu_worker.py:1034] Free memory on device (21.84/22.03 GiB) on startup. Desired GPU memory utilization is (0.91, 20.05 GiB). Actual usage is 15.38 GiB for consumed memory (weights + non-torch), 0.81 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=3991343514` (3.72 GiB) to fit into requested memory, or `--kv-cache-memory=5917243392` (5.51 GiB) to fully utilize gpu memory. Current kv cache memory in use is 3.86 GiB.
+(EngineCore pid=8878) INFO 10-18 18:14:17 [core.py:402] init engine (profile, create kv cache, warmup model) took 6.07 s
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 1702.99it/s]
+(EngineCore pid=8878) WARNING 10-18 18:14:18 [vllm.py:1703] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(EngineCore pid=8878) WARNING 10-18 18:14:18 [vllm.py:1727] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=8878) INFO 10-18 18:14:18 [kernel.py:467] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=8878) INFO 10-18 18:14:18 [vllm.py:1929] Cudagraph is disabled under eager mode
+(EngineCore pid=8878) INFO 10-18 18:14:18 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+(MainProcess pid=8585) INFO 10-18 18:14:19 [hf.py:648] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+ANSWER_BATCH 64 of 28800 unique_generated 64 seconds 12.39
+ANSWER_BATCH 128 of 28800 unique_generated 64 seconds 11.79
+ANSWER_BATCH 192 of 28800 unique_generated 64 seconds 12.33
+ANSWER_BATCH 256 of 28800 unique_generated 64 seconds 11.96
+ANSWER_BATCH 320 of 28800 unique_generated 64 seconds 14.95
+ANSWER_BATCH 384 of 28800 unique_generated 64 seconds 11.68
+ANSWER_BATCH 448 of 28800 unique_generated 64 seconds 11.94
+ANSWER_BATCH 512 of 28800 unique_generated 64 seconds 11.5
+ANSWER_BATCH 576 of 28800 unique_generated 64 seconds 11.63
+ANSWER_BATCH 640 of 28800 unique_generated 64 seconds 11.7
+ANSWER_BATCH 704 of 28800 unique_generated 64 seconds 11.64
+ANSWER_BATCH 768 of 28800 unique_generated 64 seconds 11.7
+ANSWER_BATCH 832 of 28800 unique_generated 64 seconds 11.66
+ANSWER_BATCH 896 of 28800 unique_generated 64 seconds 12.43
+ANSWER_BATCH 960 of 28800 unique_generated 64 seconds 11.5
+ANSWER_BATCH 1024 of 28800 unique_generated 64 seconds 15.0
+ANSWER_BATCH 1088 of 28800 unique_generated 64 seconds 11.51
+ANSWER_BATCH 1152 of 28800 unique_generated 64 seconds 11.54
+ANSWER_BATCH 1216 of 28800 unique_generated 64 seconds 11.87
+ANSWER_BATCH 1280 of 28800 unique_generated 64 seconds 12.23
+ANSWER_BATCH 1344 of 28800 unique_generated 64 seconds 12.32
+ANSWER_BATCH 1408 of 28800 unique_generated 64 seconds 11.67
+ANSWER_BATCH 1472 of 28800 unique_generated 64 seconds 11.69
+ANSWER_BATCH 1536 of 28800 unique_generated 64 seconds 11.44
+ANSWER_BATCH 1600 of 28800 unique_generated 64 seconds 11.81
+ANSWER_BATCH 1664 of 28800 unique_generated 64 seconds 11.71
+ANSWER_BATCH 1728 of 28800 unique_generated 64 seconds 11.8
+ANSWER_BATCH 1792 of 28800 unique_generated 64 seconds 11.95
+ANSWER_BATCH 1856 of 28800 unique_generated 64 seconds 11.65
+ANSWER_BATCH 1920 of 28800 unique_generated 64 seconds 11.42
+ANSWER_BATCH 1984 of 28800 unique_generated 64 seconds 12.21
+ANSWER_BATCH 2048 of 28800 unique_generated 64 seconds 13.22
+ANSWER_BATCH 2112 of 28800 unique_generated 64 seconds 12.09
+ANSWER_BATCH 2176 of 28800 unique_generated 64 seconds 11.84
+ANSWER_BATCH 2240 of 28800 unique_generated 64 seconds 12.58
+ANSWER_BATCH 2304 of 28800 unique_generated 64 seconds 13.99
+ANSWER_BATCH 2368 of 28800 unique_generated 64 seconds 13.47
+ANSWER_BATCH 2432 of 28800 unique_generated 64 seconds 13.24
+ANSWER_BATCH 2496 of 28800 unique_generated 64 seconds 11.98
+ANSWER_BATCH 2560 of 28800 unique_generated 64 seconds 14.06
+ANSWER_BATCH 2624 of 28800 unique_generated 64 seconds 11.76
+ANSWER_BATCH 2688 of 28800 unique_generated 64 seconds 13.17
+ANSWER_BATCH 2752 of 28800 unique_generated 64 seconds 12.5
+ANSWER_BATCH 2816 of 28800 unique_generated 64 seconds 11.75
+ANSWER_BATCH 2880 of 28800 unique_generated 64 seconds 15.14
+ANSWER_BATCH 2944 of 28800 unique_generated 64 seconds 11.54
+ANSWER_BATCH 3008 of 28800 unique_generated 64 seconds 12.22
+ANSWER_BATCH 3072 of 28800 unique_generated 64 seconds 11.49
+ANSWER_BATCH 3136 of 28800 unique_generated 64 seconds 11.72
+ANSWER_BATCH 3200 of 28800 unique_generated 64 seconds 12.01
+ANSWER_BATCH 3264 of 28800 unique_generated 64 seconds 11.77
+ANSWER_BATCH 3328 of 28800 unique_generated 64 seconds 11.45
+ANSWER_BATCH 3392 of 28800 unique_generated 64 seconds 12.23
+ANSWER_BATCH 3456 of 28800 unique_generated 64 seconds 11.85
+ANSWER_BATCH 3520 of 28800 unique_generated 64 seconds 14.29
+ANSWER_BATCH 3584 of 28800 unique_generated 64 seconds 11.98
+ANSWER_BATCH 3648 of 28800 unique_generated 64 seconds 11.69
+ANSWER_BATCH 3712 of 28800 unique_generated 64 seconds 11.89
+ANSWER_BATCH 3776 of 28800 unique_generated 64 seconds 12.06
+ANSWER_BATCH 3840 of 28800 unique_generated 64 seconds 11.84
+ANSWER_BATCH 3904 of 28800 unique_generated 64 seconds 11.99
+ANSWER_BATCH 3968 of 28800 unique_generated 64 seconds 11.38
+ANSWER_BATCH 4032 of 28800 unique_generated 64 seconds 12.05
+ANSWER_BATCH 4096 of 28800 unique_generated 64 seconds 12.43
+ANSWER_BATCH 4160 of 28800 unique_generated 64 seconds 12.4
+ANSWER_BATCH 4224 of 28800 unique_generated 64 seconds 11.67
+ANSWER_BATCH 4288 of 28800 unique_generated 64 seconds 11.86
+ANSWER_BATCH 4352 of 28800 unique_generated 64 seconds 12.74
+ANSWER_BATCH 4416 of 28800 unique_generated 64 seconds 14.73
+ANSWER_BATCH 4480 of 28800 unique_generated 64 seconds 12.83
+ANSWER_BATCH 4544 of 28800 unique_generated 64 seconds 13.12
+ANSWER_BATCH 4608 of 28800 unique_generated 64 seconds 11.88
+ANSWER_BATCH 4672 of 28800 unique_generated 64 seconds 11.74
+ANSWER_BATCH 4736 of 28800 unique_generated 64 seconds 12.61
+ANSWER_BATCH 4800 of 28800 unique_generated 64 seconds 11.66
+ANSWER_BATCH 4864 of 28800 unique_generated 64 seconds 12.01
+ANSWER_BATCH 4928 of 28800 unique_generated 64 seconds 11.74
+ANSWER_BATCH 4992 of 28800 unique_generated 64 seconds 13.78
+ANSWER_BATCH 5056 of 28800 unique_generated 64 seconds 11.66
+ANSWER_BATCH 5120 of 28800 unique_generated 64 seconds 11.86
+ANSWER_BATCH 5184 of 28800 unique_generated 64 seconds 11.98
+ANSWER_BATCH 5248 of 28800 unique_generated 64 seconds 11.4
+ANSWER_BATCH 5312 of 28800 unique_generated 64 seconds 11.7
+ANSWER_BATCH 5376 of 28800 unique_generated 64 seconds 11.88
+ANSWER_BATCH 5440 of 28800 unique_generated 64 seconds 12.1
+ANSWER_BATCH 5504 of 28800 unique_generated 64 seconds 13.44
+ANSWER_BATCH 5568 of 28800 unique_generated 64 seconds 12.19
+ANSWER_BATCH 5632 of 28800 unique_generated 64 seconds 14.87
+ANSWER_BATCH 5696 of 28800 unique_generated 64 seconds 11.53
+ANSWER_BATCH 5760 of 28800 unique_generated 64 seconds 11.81
+ANSWER_BATCH 5824 of 28800 unique_generated 64 seconds 12.23
+ANSWER_BATCH 5888 of 28800 unique_generated 64 seconds 11.52
+ANSWER_BATCH 5952 of 28800 unique_generated 64 seconds 11.82
+ANSWER_BATCH 6016 of 28800 unique_generated 64 seconds 11.54
+ANSWER_BATCH 6080 of 28800 unique_generated 64 seconds 11.75
+ANSWER_BATCH 6144 of 28800 unique_generated 64 seconds 11.82
+ANSWER_BATCH 6208 of 28800 unique_generated 64 seconds 11.64
+ANSWER_BATCH 6272 of 28800 unique_generated 64 seconds 11.74
+ANSWER_BATCH 6336 of 28800 unique_generated 64 seconds 14.01
+ANSWER_BATCH 6400 of 28800 unique_generated 64 seconds 12.14
+ANSWER_BATCH 6464 of 28800 unique_generated 64 seconds 11.58
+ANSWER_BATCH 6528 of 28800 unique_generated 64 seconds 11.6
+ANSWER_BATCH 6592 of 28800 unique_generated 64 seconds 12.24
+ANSWER_BATCH 6656 of 28800 unique_generated 64 seconds 13.56
+ANSWER_BATCH 6720 of 28800 unique_generated 64 seconds 14.78
+ANSWER_BATCH 6784 of 28800 unique_generated 64 seconds 12.66
+ANSWER_BATCH 6848 of 28800 unique_generated 64 seconds 13.67
+ANSWER_BATCH 6912 of 28800 unique_generated 64 seconds 12.69
+ANSWER_BATCH 6976 of 28800 unique_generated 64 seconds 12.22
+ANSWER_BATCH 7040 of 28800 unique_generated 64 seconds 12.05
+ANSWER_BATCH 7104 of 28800 unique_generated 64 seconds 11.96
+ANSWER_BATCH 7168 of 28800 unique_generated 64 seconds 11.42
+ANSWER_BATCH 7232 of 28800 unique_generated 61 seconds 13.49
+ANSWER_BATCH 7296 of 28800 unique_generated 61 seconds 11.57
+ANSWER_BATCH 7360 of 28800 unique_generated 59 seconds 11.55
+ANSWER_BATCH 7424 of 28800 unique_generated 62 seconds 12.33
+ANSWER_BATCH 7488 of 28800 unique_generated 58 seconds 13.1
+ANSWER_BATCH 7552 of 28800 unique_generated 63 seconds 14.95
+ANSWER_BATCH 7616 of 28800 unique_generated 62 seconds 12.84
+ANSWER_BATCH 7680 of 28800 unique_generated 60 seconds 12.07
+ANSWER_BATCH 7744 of 28800 unique_generated 60 seconds 11.65
+ANSWER_BATCH 7808 of 28800 unique_generated 62 seconds 14.48
+ANSWER_BATCH 7872 of 28800 unique_generated 60 seconds 11.88
+ANSWER_BATCH 7936 of 28800 unique_generated 62 seconds 11.5
+ANSWER_BATCH 8000 of 28800 unique_generated 61 seconds 11.97
+ANSWER_BATCH 8064 of 28800 unique_generated 59 seconds 11.9
+ANSWER_BATCH 8128 of 28800 unique_generated 62 seconds 12.24
+ANSWER_BATCH 8192 of 28800 unique_generated 61 seconds 11.79
+ANSWER_BATCH 8256 of 28800 unique_generated 63 seconds 11.35
+ANSWER_BATCH 8320 of 28800 unique_generated 59 seconds 11.72
+ANSWER_BATCH 8384 of 28800 unique_generated 59 seconds 12.42
+ANSWER_BATCH 8448 of 28800 unique_generated 60 seconds 12.32
+ANSWER_BATCH 8512 of 28800 unique_generated 61 seconds 12.14
+ANSWER_BATCH 8576 of 28800 unique_generated 61 seconds 12.23
+ANSWER_BATCH 8640 of 28800 unique_generated 58 seconds 11.35
+ANSWER_BATCH 8704 of 28800 unique_generated 61 seconds 11.79
+ANSWER_BATCH 8768 of 28800 unique_generated 59 seconds 11.95
+ANSWER_BATCH 8832 of 28800 unique_generated 61 seconds 12.83
+ANSWER_BATCH 8896 of 28800 unique_generated 62 seconds 14.69
+ANSWER_BATCH 8960 of 28800 unique_generated 59 seconds 12.47
+ANSWER_BATCH 9024 of 28800 unique_generated 60 seconds 11.88
+ANSWER_BATCH 9088 of 28800 unique_generated 60 seconds 11.9
+ANSWER_BATCH 9152 of 28800 unique_generated 62 seconds 11.7
+ANSWER_BATCH 9216 of 28800 unique_generated 57 seconds 11.74
+ANSWER_BATCH 9280 of 28800 unique_generated 60 seconds 13.08
+ANSWER_BATCH 9344 of 28800 unique_generated 61 seconds 12.51
+ANSWER_BATCH 9408 of 28800 unique_generated 60 seconds 11.67
+ANSWER_BATCH 9472 of 28800 unique_generated 61 seconds 11.84
+ANSWER_BATCH 9536 of 28800 unique_generated 60 seconds 11.89
+ANSWER_BATCH 9600 of 28800 unique_generated 60 seconds 12.07
+ANSWER_BATCH 9664 of 28800 unique_generated 59 seconds 12.35
+ANSWER_BATCH 9728 of 28800 unique_generated 60 seconds 12.46
+ANSWER_BATCH 9792 of 28800 unique_generated 63 seconds 12.84
+ANSWER_BATCH 9856 of 28800 unique_generated 59 seconds 11.91
+ANSWER_BATCH 9920 of 28800 unique_generated 57 seconds 13.18
+ANSWER_BATCH 9984 of 28800 unique_generated 60 seconds 11.81
+ANSWER_BATCH 10048 of 28800 unique_generated 63 seconds 12.04
+ANSWER_BATCH 10112 of 28800 unique_generated 61 seconds 12.71
+ANSWER_BATCH 10176 of 28800 unique_generated 55 seconds 12.26
+ANSWER_BATCH 10240 of 28800 unique_generated 62 seconds 12.24
+ANSWER_BATCH 10304 of 28800 unique_generated 59 seconds 11.55
+ANSWER_BATCH 10368 of 28800 unique_generated 61 seconds 12.05
+ANSWER_BATCH 10432 of 28800 unique_generated 61 seconds 11.92
+ANSWER_BATCH 10496 of 28800 unique_generated 59 seconds 12.13
+ANSWER_BATCH 10560 of 28800 unique_generated 62 seconds 12.94
+ANSWER_BATCH 10624 of 28800 unique_generated 56 seconds 12.23
+ANSWER_BATCH 10688 of 28800 unique_generated 60 seconds 15.22
+ANSWER_BATCH 10752 of 28800 unique_generated 63 seconds 12.19
+ANSWER_BATCH 10816 of 28800 unique_generated 60 seconds 12.11
+ANSWER_BATCH 10880 of 28800 unique_generated 59 seconds 12.02
+ANSWER_BATCH 10944 of 28800 unique_generated 56 seconds 10.63
+ANSWER_BATCH 11008 of 28800 unique_generated 62 seconds 11.57
+ANSWER_BATCH 11072 of 28800 unique_generated 59 seconds 12.12
+ANSWER_BATCH 11136 of 28800 unique_generated 60 seconds 14.99
+ANSWER_BATCH 11200 of 28800 unique_generated 59 seconds 12.18
+ANSWER_BATCH 11264 of 28800 unique_generated 59 seconds 11.39
+ANSWER_BATCH 11328 of 28800 unique_generated 56 seconds 11.94
+ANSWER_BATCH 11392 of 28800 unique_generated 60 seconds 11.91
+ANSWER_BATCH 11456 of 28800 unique_generated 61 seconds 12.26
+ANSWER_BATCH 11520 of 28800 unique_generated 61 seconds 11.73
+ANSWER_BATCH 11584 of 28800 unique_generated 61 seconds 11.87
+ANSWER_BATCH 11648 of 28800 unique_generated 63 seconds 13.93
+ANSWER_BATCH 11712 of 28800 unique_generated 62 seconds 12.62
+ANSWER_BATCH 11776 of 28800 unique_generated 61 seconds 11.84
+ANSWER_BATCH 11840 of 28800 unique_generated 59 seconds 11.47
+ANSWER_BATCH 11904 of 28800 unique_generated 61 seconds 12.2
+ANSWER_BATCH 11968 of 28800 unique_generated 64 seconds 11.95
+ANSWER_BATCH 12032 of 28800 unique_generated 59 seconds 12.82
+ANSWER_BATCH 12096 of 28800 unique_generated 60 seconds 13.15
+ANSWER_BATCH 12160 of 28800 unique_generated 59 seconds 12.13
+ANSWER_BATCH 12224 of 28800 unique_generated 61 seconds 11.66
+ANSWER_BATCH 12288 of 28800 unique_generated 61 seconds 12.23
+ANSWER_BATCH 12352 of 28800 unique_generated 59 seconds 12.02
+ANSWER_BATCH 12416 of 28800 unique_generated 60 seconds 11.75
+ANSWER_BATCH 12480 of 28800 unique_generated 58 seconds 11.67
+ANSWER_BATCH 12544 of 28800 unique_generated 64 seconds 11.81
+ANSWER_BATCH 12608 of 28800 unique_generated 62 seconds 11.53
+ANSWER_BATCH 12672 of 28800 unique_generated 61 seconds 14.35
+ANSWER_BATCH 12736 of 28800 unique_generated 62 seconds 11.89
+ANSWER_BATCH 12800 of 28800 unique_generated 62 seconds 11.76
+ANSWER_BATCH 12864 of 28800 unique_generated 60 seconds 14.66
+ANSWER_BATCH 12928 of 28800 unique_generated 62 seconds 12.39
+ANSWER_BATCH 12992 of 28800 unique_generated 61 seconds 11.71
+ANSWER_BATCH 13056 of 28800 unique_generated 62 seconds 12.44
+ANSWER_BATCH 13120 of 28800 unique_generated 60 seconds 11.8
+ANSWER_BATCH 13184 of 28800 unique_generated 59 seconds 12.6
+ANSWER_BATCH 13248 of 28800 unique_generated 62 seconds 12.18
+ANSWER_BATCH 13312 of 28800 unique_generated 63 seconds 13.04
+ANSWER_BATCH 13376 of 28800 unique_generated 63 seconds 12.13
+ANSWER_BATCH 13440 of 28800 unique_generated 62 seconds 12.31
+ANSWER_BATCH 13504 of 28800 unique_generated 63 seconds 11.86
+ANSWER_BATCH 13568 of 28800 unique_generated 57 seconds 13.49
+ANSWER_BATCH 13632 of 28800 unique_generated 60 seconds 12.16
+ANSWER_BATCH 13696 of 28800 unique_generated 61 seconds 13.9
+ANSWER_BATCH 13760 of 28800 unique_generated 58 seconds 12.35
+ANSWER_BATCH 13824 of 28800 unique_generated 62 seconds 14.57
+ANSWER_BATCH 13888 of 28800 unique_generated 61 seconds 15.53
+ANSWER_BATCH 13952 of 28800 unique_generated 62 seconds 12.01
+ANSWER_BATCH 14016 of 28800 unique_generated 57 seconds 11.8
+ANSWER_BATCH 14080 of 28800 unique_generated 60 seconds 11.64
+ANSWER_BATCH 14144 of 28800 unique_generated 61 seconds 11.49
+ANSWER_BATCH 14208 of 28800 unique_generated 60 seconds 14.85
+ANSWER_BATCH 14272 of 28800 unique_generated 61 seconds 12.24
+ANSWER_BATCH 14336 of 28800 unique_generated 60 seconds 12.25
+ANSWER_BATCH 14400 of 28800 unique_generated 62 seconds 11.87
+ANSWER_BATCH 14464 of 28800 unique_generated 50 seconds 10.05
+ANSWER_BATCH 14528 of 28800 unique_generated 44 seconds 9.71
+ANSWER_BATCH 14592 of 28800 unique_generated 45 seconds 11.39
+ANSWER_BATCH 14656 of 28800 unique_generated 47 seconds 10.77
+ANSWER_BATCH 14720 of 28800 unique_generated 50 seconds 12.79
+ANSWER_BATCH 14784 of 28800 unique_generated 51 seconds 11.1
+ANSWER_BATCH 14848 of 28800 unique_generated 54 seconds 10.4
+ANSWER_BATCH 14912 of 28800 unique_generated 43 seconds 9.3
+ANSWER_BATCH 14976 of 28800 unique_generated 51 seconds 10.32
+ANSWER_BATCH 15040 of 28800 unique_generated 47 seconds 11.75
+ANSWER_BATCH 15104 of 28800 unique_generated 42 seconds 8.96
+ANSWER_BATCH 15168 of 28800 unique_generated 40 seconds 8.99
+ANSWER_BATCH 15232 of 28800 unique_generated 47 seconds 10.2
+ANSWER_BATCH 15296 of 28800 unique_generated 46 seconds 9.84
+ANSWER_BATCH 15360 of 28800 unique_generated 53 seconds 10.85
+ANSWER_BATCH 15424 of 28800 unique_generated 48 seconds 10.41
+ANSWER_BATCH 15488 of 28800 unique_generated 52 seconds 10.03
+ANSWER_BATCH 15552 of 28800 unique_generated 43 seconds 8.89
+ANSWER_BATCH 15616 of 28800 unique_generated 49 seconds 10.04
+ANSWER_BATCH 15680 of 28800 unique_generated 46 seconds 9.65
+ANSWER_BATCH 15744 of 28800 unique_generated 49 seconds 10.81
+ANSWER_BATCH 15808 of 28800 unique_generated 52 seconds 13.04
+ANSWER_BATCH 15872 of 28800 unique_generated 45 seconds 9.41
+ANSWER_BATCH 15936 of 28800 unique_generated 46 seconds 9.69
+ANSWER_BATCH 16000 of 28800 unique_generated 39 seconds 8.07
+ANSWER_BATCH 16064 of 28800 unique_generated 41 seconds 9.4
+ANSWER_BATCH 16128 of 28800 unique_generated 44 seconds 9.72
+ANSWER_BATCH 16192 of 28800 unique_generated 34 seconds 9.5
+ANSWER_BATCH 16256 of 28800 unique_generated 39 seconds 9.01
+ANSWER_BATCH 16320 of 28800 unique_generated 44 seconds 9.6
+ANSWER_BATCH 16384 of 28800 unique_generated 41 seconds 8.86
+ANSWER_BATCH 16448 of 28800 unique_generated 48 seconds 10.83
+ANSWER_BATCH 16512 of 28800 unique_generated 50 seconds 10.55
+ANSWER_BATCH 16576 of 28800 unique_generated 50 seconds 10.1
+ANSWER_BATCH 16640 of 28800 unique_generated 51 seconds 9.95
+ANSWER_BATCH 16704 of 28800 unique_generated 39 seconds 8.84
+ANSWER_BATCH 16768 of 28800 unique_generated 43 seconds 9.76
+ANSWER_BATCH 16832 of 28800 unique_generated 42 seconds 10.87
+ANSWER_BATCH 16896 of 28800 unique_generated 49 seconds 10.9
+ANSWER_BATCH 16960 of 28800 unique_generated 48 seconds 10.86
+ANSWER_BATCH 17024 of 28800 unique_generated 40 seconds 9.47
+ANSWER_BATCH 17088 of 28800 unique_generated 45 seconds 12.94
+ANSWER_BATCH 17152 of 28800 unique_generated 34 seconds 8.33
+ANSWER_BATCH 17216 of 28800 unique_generated 43 seconds 9.25
+ANSWER_BATCH 17280 of 28800 unique_generated 47 seconds 13.11
+ANSWER_BATCH 17344 of 28800 unique_generated 45 seconds 10.64
+ANSWER_BATCH 17408 of 28800 unique_generated 43 seconds 10.06
+ANSWER_BATCH 17472 of 28800 unique_generated 49 seconds 10.78
+ANSWER_BATCH 17536 of 28800 unique_generated 50 seconds 9.95
+ANSWER_BATCH 17600 of 28800 unique_generated 46 seconds 9.96
+ANSWER_BATCH 17664 of 28800 unique_generated 51 seconds 10.36
+ANSWER_BATCH 17728 of 28800 unique_generated 44 seconds 11.07
+ANSWER_BATCH 17792 of 28800 unique_generated 42 seconds 10.19
+ANSWER_BATCH 17856 of 28800 unique_generated 38 seconds 10.15
+ANSWER_BATCH 17920 of 28800 unique_generated 45 seconds 10.81
+ANSWER_BATCH 17984 of 28800 unique_generated 44 seconds 11.06
+ANSWER_BATCH 18048 of 28800 unique_generated 43 seconds 10.61
+ANSWER_BATCH 18112 of 28800 unique_generated 41 seconds 9.28
+ANSWER_BATCH 18176 of 28800 unique_generated 45 seconds 10.32
+ANSWER_BATCH 18240 of 28800 unique_generated 43 seconds 9.88
+ANSWER_BATCH 18304 of 28800 unique_generated 50 seconds 12.08
+ANSWER_BATCH 18368 of 28800 unique_generated 46 seconds 12.75
+ANSWER_BATCH 18432 of 28800 unique_generated 38 seconds 8.92
+ANSWER_BATCH 18496 of 28800 unique_generated 40 seconds 9.11
+ANSWER_BATCH 18560 of 28800 unique_generated 44 seconds 10.2
+ANSWER_BATCH 18624 of 28800 unique_generated 46 seconds 9.15
+ANSWER_BATCH 18688 of 28800 unique_generated 47 seconds 10.15
+ANSWER_BATCH 18752 of 28800 unique_generated 56 seconds 10.79
+ANSWER_BATCH 18816 of 28800 unique_generated 45 seconds 9.22
+ANSWER_BATCH 18880 of 28800 unique_generated 43 seconds 9.53
+ANSWER_BATCH 18944 of 28800 unique_generated 43 seconds 9.91
+ANSWER_BATCH 19008 of 28800 unique_generated 47 seconds 10.14
+ANSWER_BATCH 19072 of 28800 unique_generated 44 seconds 9.67
+ANSWER_BATCH 19136 of 28800 unique_generated 55 seconds 11.58
+ANSWER_BATCH 19200 of 28800 unique_generated 49 seconds 11.98
+ANSWER_BATCH 19264 of 28800 unique_generated 44 seconds 10.84
+ANSWER_BATCH 19328 of 28800 unique_generated 44 seconds 10.09
+ANSWER_BATCH 19392 of 28800 unique_generated 46 seconds 11.84
+ANSWER_BATCH 19456 of 28800 unique_generated 44 seconds 9.67
+ANSWER_BATCH 19520 of 28800 unique_generated 41 seconds 9.3
+ANSWER_BATCH 19584 of 28800 unique_generated 45 seconds 10.2
+ANSWER_BATCH 19648 of 28800 unique_generated 47 seconds 9.84
+ANSWER_BATCH 19712 of 28800 unique_generated 41 seconds 8.5
+ANSWER_BATCH 19776 of 28800 unique_generated 43 seconds 9.19
+ANSWER_BATCH 19840 of 28800 unique_generated 50 seconds 10.96
+ANSWER_BATCH 19904 of 28800 unique_generated 50 seconds 12.53
+ANSWER_BATCH 19968 of 28800 unique_generated 43 seconds 9.25
+ANSWER_BATCH 20032 of 28800 unique_generated 45 seconds 13.11
+ANSWER_BATCH 20096 of 28800 unique_generated 47 seconds 11.44
+ANSWER_BATCH 20160 of 28800 unique_generated 45 seconds 9.72
+ANSWER_BATCH 20224 of 28800 unique_generated 50 seconds 10.6
+ANSWER_BATCH 20288 of 28800 unique_generated 49 seconds 9.84
+ANSWER_BATCH 20352 of 28800 unique_generated 44 seconds 9.57
+ANSWER_BATCH 20416 of 28800 unique_generated 49 seconds 9.77
+ANSWER_BATCH 20480 of 28800 unique_generated 48 seconds 10.46
+ANSWER_BATCH 20544 of 28800 unique_generated 53 seconds 10.68
+ANSWER_BATCH 20608 of 28800 unique_generated 49 seconds 9.58
+ANSWER_BATCH 20672 of 28800 unique_generated 46 seconds 9.83
+ANSWER_BATCH 20736 of 28800 unique_generated 48 seconds 12.95
+ANSWER_BATCH 20800 of 28800 unique_generated 38 seconds 9.27
+ANSWER_BATCH 20864 of 28800 unique_generated 45 seconds 9.05
+ANSWER_BATCH 20928 of 28800 unique_generated 37 seconds 8.72
+ANSWER_BATCH 20992 of 28800 unique_generated 48 seconds 10.38
+ANSWER_BATCH 21056 of 28800 unique_generated 48 seconds 9.79
+ANSWER_BATCH 21120 of 28800 unique_generated 50 seconds 12.84
+ANSWER_BATCH 21184 of 28800 unique_generated 40 seconds 8.32
+ANSWER_BATCH 21248 of 28800 unique_generated 40 seconds 9.46
+ANSWER_BATCH 21312 of 28800 unique_generated 46 seconds 10.49
+ANSWER_BATCH 21376 of 28800 unique_generated 52 seconds 13.1
+ANSWER_BATCH 21440 of 28800 unique_generated 44 seconds 10.45
+ANSWER_BATCH 21504 of 28800 unique_generated 43 seconds 9.09
+ANSWER_BATCH 21568 of 28800 unique_generated 43 seconds 9.1
+ANSWER_BATCH 21632 of 28800 unique_generated 34 seconds 7.76
+ANSWER_BATCH 21696 of 28800 unique_generated 7 seconds 2.55
+ANSWER_BATCH 21760 of 28800 unique_generated 18 seconds 4.63
+ANSWER_BATCH 21824 of 28800 unique_generated 13 seconds 3.65
+ANSWER_BATCH 21888 of 28800 unique_generated 14 seconds 4.19
+ANSWER_BATCH 21952 of 28800 unique_generated 18 seconds 7.29
+ANSWER_BATCH 22016 of 28800 unique_generated 19 seconds 5.49
+ANSWER_BATCH 22080 of 28800 unique_generated 12 seconds 3.72
+ANSWER_BATCH 22144 of 28800 unique_generated 15 seconds 4.25
+ANSWER_BATCH 22208 of 28800 unique_generated 23 seconds 7.88
+ANSWER_BATCH 22272 of 28800 unique_generated 15 seconds 4.16
+ANSWER_BATCH 22336 of 28800 unique_generated 9 seconds 2.4
+ANSWER_BATCH 22400 of 28800 unique_generated 9 seconds 2.79
+ANSWER_BATCH 22464 of 28800 unique_generated 18 seconds 4.44
+ANSWER_BATCH 22528 of 28800 unique_generated 14 seconds 4.02
+ANSWER_BATCH 22592 of 28800 unique_generated 18 seconds 4.89
+ANSWER_BATCH 22656 of 28800 unique_generated 14 seconds 6.89
+ANSWER_BATCH 22720 of 28800 unique_generated 15 seconds 3.85
+ANSWER_BATCH 22784 of 28800 unique_generated 15 seconds 4.6
+ANSWER_BATCH 22848 of 28800 unique_generated 21 seconds 5.28
+ANSWER_BATCH 22912 of 28800 unique_generated 7 seconds 1.8
+ANSWER_BATCH 22976 of 28800 unique_generated 15 seconds 4.06
+ANSWER_BATCH 23040 of 28800 unique_generated 10 seconds 2.41
+ANSWER_BATCH 23104 of 28800 unique_generated 20 seconds 4.46
+ANSWER_BATCH 23168 of 28800 unique_generated 18 seconds 4.9
+ANSWER_BATCH 23232 of 28800 unique_generated 12 seconds 4.13
+ANSWER_BATCH 23296 of 28800 unique_generated 12 seconds 4.19
+ANSWER_BATCH 23360 of 28800 unique_generated 13 seconds 3.55
+ANSWER_BATCH 23424 of 28800 unique_generated 9 seconds 2.94
+ANSWER_BATCH 23488 of 28800 unique_generated 14 seconds 3.78
+ANSWER_BATCH 23552 of 28800 unique_generated 19 seconds 5.03
+ANSWER_BATCH 23616 of 28800 unique_generated 15 seconds 4.2
+ANSWER_BATCH 23680 of 28800 unique_generated 19 seconds 4.03
+ANSWER_BATCH 23744 of 28800 unique_generated 15 seconds 4.24
+ANSWER_BATCH 23808 of 28800 unique_generated 13 seconds 3.35
+ANSWER_BATCH 23872 of 28800 unique_generated 22 seconds 5.08
+ANSWER_BATCH 23936 of 28800 unique_generated 8 seconds 2.64
+ANSWER_BATCH 24000 of 28800 unique_generated 15 seconds 4.29
+ANSWER_BATCH 24064 of 28800 unique_generated 20 seconds 6.62
+ANSWER_BATCH 24128 of 28800 unique_generated 16 seconds 4.54
+ANSWER_BATCH 24192 of 28800 unique_generated 11 seconds 3.28
+ANSWER_BATCH 24256 of 28800 unique_generated 14 seconds 6.56
+ANSWER_BATCH 24320 of 28800 unique_generated 15 seconds 4.43
+ANSWER_BATCH 24384 of 28800 unique_generated 8 seconds 2.01
+ANSWER_BATCH 24448 of 28800 unique_generated 16 seconds 4.38
+ANSWER_BATCH 24512 of 28800 unique_generated 10 seconds 3.4
+ANSWER_BATCH 24576 of 28800 unique_generated 13 seconds 4.13
+ANSWER_BATCH 24640 of 28800 unique_generated 13 seconds 4.84
+ANSWER_BATCH 24704 of 28800 unique_generated 18 seconds 5.08
+ANSWER_BATCH 24768 of 28800 unique_generated 15 seconds 3.29
+ANSWER_BATCH 24832 of 28800 unique_generated 20 seconds 5.72
+ANSWER_BATCH 24896 of 28800 unique_generated 13 seconds 3.36
+ANSWER_BATCH 24960 of 28800 unique_generated 12 seconds 4.82
+ANSWER_BATCH 25024 of 28800 unique_generated 14 seconds 4.32
+ANSWER_BATCH 25088 of 28800 unique_generated 11 seconds 3.02
+ANSWER_BATCH 25152 of 28800 unique_generated 20 seconds 5.44
+ANSWER_BATCH 25216 of 28800 unique_generated 18 seconds 5.15
+ANSWER_BATCH 25280 of 28800 unique_generated 12 seconds 3.48
+ANSWER_BATCH 25344 of 28800 unique_generated 11 seconds 2.97
+ANSWER_BATCH 25408 of 28800 unique_generated 23 seconds 5.42
+ANSWER_BATCH 25472 of 28800 unique_generated 23 seconds 5.79
+ANSWER_BATCH 25536 of 28800 unique_generated 19 seconds 8.36
+ANSWER_BATCH 25600 of 28800 unique_generated 11 seconds 3.76
+ANSWER_BATCH 25664 of 28800 unique_generated 6 seconds 1.51
+ANSWER_BATCH 25728 of 28800 unique_generated 8 seconds 2.1
+ANSWER_BATCH 25792 of 28800 unique_generated 12 seconds 3.12
+ANSWER_BATCH 25856 of 28800 unique_generated 18 seconds 5.09
+ANSWER_BATCH 25920 of 28800 unique_generated 17 seconds 4.26
+ANSWER_BATCH 25984 of 28800 unique_generated 17 seconds 5.08
+ANSWER_BATCH 26048 of 28800 unique_generated 11 seconds 3.32
+ANSWER_BATCH 26112 of 28800 unique_generated 18 seconds 4.73
+ANSWER_BATCH 26176 of 28800 unique_generated 17 seconds 4.57
+ANSWER_BATCH 26240 of 28800 unique_generated 11 seconds 3.06
+ANSWER_BATCH 26304 of 28800 unique_generated 19 seconds 4.48
+ANSWER_BATCH 26368 of 28800 unique_generated 10 seconds 2.82
+ANSWER_BATCH 26432 of 28800 unique_generated 16 seconds 4.16
+ANSWER_BATCH 26496 of 28800 unique_generated 13 seconds 3.23
+ANSWER_BATCH 26560 of 28800 unique_generated 18 seconds 4.73
+ANSWER_BATCH 26624 of 28800 unique_generated 8 seconds 5.57
+ANSWER_BATCH 26688 of 28800 unique_generated 15 seconds 3.9
+ANSWER_BATCH 26752 of 28800 unique_generated 12 seconds 3.95
+ANSWER_BATCH 26816 of 28800 unique_generated 17 seconds 4.27
+ANSWER_BATCH 26880 of 28800 unique_generated 11 seconds 3.8
+ANSWER_BATCH 26944 of 28800 unique_generated 21 seconds 6.28
+ANSWER_BATCH 27008 of 28800 unique_generated 12 seconds 3.45
+ANSWER_BATCH 27072 of 28800 unique_generated 19 seconds 5.03
+ANSWER_BATCH 27136 of 28800 unique_generated 14 seconds 3.77
+ANSWER_BATCH 27200 of 28800 unique_generated 11 seconds 2.85
+ANSWER_BATCH 27264 of 28800 unique_generated 16 seconds 4.04
+ANSWER_BATCH 27328 of 28800 unique_generated 12 seconds 3.75
+ANSWER_BATCH 27392 of 28800 unique_generated 14 seconds 3.0
+ANSWER_BATCH 27456 of 28800 unique_generated 16 seconds 3.97
+ANSWER_BATCH 27520 of 28800 unique_generated 13 seconds 3.33
+ANSWER_BATCH 27584 of 28800 unique_generated 15 seconds 4.42
+ANSWER_BATCH 27648 of 28800 unique_generated 9 seconds 3.17
+ANSWER_BATCH 27712 of 28800 unique_generated 10 seconds 2.74
+ANSWER_BATCH 27776 of 28800 unique_generated 17 seconds 4.54
+ANSWER_BATCH 27840 of 28800 unique_generated 27 seconds 6.73
+ANSWER_BATCH 27904 of 28800 unique_generated 12 seconds 2.84
+ANSWER_BATCH 27968 of 28800 unique_generated 10 seconds 3.06
+ANSWER_BATCH 28032 of 28800 unique_generated 10 seconds 2.27
+ANSWER_BATCH 28096 of 28800 unique_generated 14 seconds 5.43
+ANSWER_BATCH 28160 of 28800 unique_generated 17 seconds 4.43
+ANSWER_BATCH 28224 of 28800 unique_generated 20 seconds 7.18
+ANSWER_BATCH 28288 of 28800 unique_generated 14 seconds 4.12
+ANSWER_BATCH 28352 of 28800 unique_generated 18 seconds 5.25
+ANSWER_BATCH 28416 of 28800 unique_generated 5 seconds 1.19
+ANSWER_BATCH 28480 of 28800 unique_generated 13 seconds 4.1
+ANSWER_BATCH 28544 of 28800 unique_generated 12 seconds 2.91
+ANSWER_BATCH 28608 of 28800 unique_generated 13 seconds 3.95
+ANSWER_BATCH 28672 of 28800 unique_generated 11 seconds 3.53
+ANSWER_BATCH 28736 of 28800 unique_generated 15 seconds 4.13
+ANSWER_BATCH 28800 of 28800 unique_generated 10 seconds 2.48
+GENERATION_ALL_DONE
+(MainProcess pid=8585) INFO 10-18 19:27:38 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=8878) INFO 10-18 19:27:38 [core.py:1454] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=8878) INFO 10-18 19:27:38 [core.py:1635] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=8878) INFO 10-18 19:27:38 [core.py:1666] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=8878) INFO 10-18 19:27:38 [core.py:1499] [shutdown] EngineCore: exiting busy loop

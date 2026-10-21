@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "questions": 3600,
+  "documents": 19945,
+  "retrieval_rows": 28800,
+  "answer_rows": 28800,
+  "unique_prompts": 20740,
+  "logged_unique_generations": 20740,
+  "data_sha256": "a27bf0559eb4077c401e7025ee74459fdb15241627d1a4947fe9e493f0690ad0",
+  "checks": [
+    "complete Cartesian product",
+    "no smoke overlap (analysis)",
+    "exact evidence budgets",
+    "fully covered gold sentence token spans",
+    "independent span-union recall",
+    "scores recomputed",
+    "reader token limits",
+    "identical prompt cache consistency",
+    "task generation log counts match distinct full prompts and independent retrieval identity audit"
+  ]
+}

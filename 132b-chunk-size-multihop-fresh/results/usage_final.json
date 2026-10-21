@@ -1,0 +1,14 @@
+{
+  "baseline_balance": 127.05,
+  "final_balance": 122.13,
+  "account_delta_cu": 4.92,
+  "account_usage_text": "Current balance: 122.13 compute units\nUsage rate: 3.08/hr\nActive assignments: 2\n",
+  "session": "b9-132b",
+  "GPU": "NVIDIA L4",
+  "inferred_session_rate_cu_per_hour": 1.54,
+  "lease_hours_upper_bound": 1.7221330741666667,
+  "rate_time_cu_upper_bound": 2.652084934216667,
+  "cu_upper_bound": 4.93,
+  "stop_utc": "2026-10-18T19:28:10.870613+00:00",
+  "note": "Conservative bound is max(shared-account observed decrement, 1.54 CU/h times total experiment elapsed until stop). Experiment start precedes allocation, so rate-time bound includes extra setup time. Shared balance changes may lag and are not exact session billing."
+}

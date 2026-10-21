@@ -1,0 +1,26 @@
+{
+  "questions": 3600,
+  "documents": 19945,
+  "question_types": {
+    "bridge_comparison": 753,
+    "compositional": 1526,
+    "comparison": 876,
+    "inference": 445
+  },
+  "document_length_quantiles": {
+    "0": 4.0,
+    "0.25": 41.0,
+    "0.5": 72.0,
+    "0.75": 132.0,
+    "0.9": 251.0,
+    "0.95": 365.0,
+    "0.99": 633.6800000000039,
+    "1": 1721.0
+  },
+  "documents_over_limit": {
+    "128": 5142,
+    "256": 1941,
+    "512": 410,
+    "1024": 14
+  }
+}

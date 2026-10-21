@@ -1,0 +1,13 @@
+{
+  "session": "b9-132b",
+  "requested_gpu": "L4",
+  "observed_gpu": "NVIDIA L4",
+  "floor_before_new": 103.0,
+  "balance_before_new": 127.05,
+  "allocation_attempts": 1,
+  "initial_sessions_check": "Named session absent; allocated once",
+  "observed_account_rate_before": 1.54,
+  "observed_account_rate_after": 3.08,
+  "inferred_session_rate_cu_per_hour": 1.54,
+  "preregistration": "c9907fa before retrieval and answers"
+}

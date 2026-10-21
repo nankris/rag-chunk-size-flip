@@ -1,0 +1,27 @@
+{
+  "article": {
+    "title": "Which RAG Chunk Size Is Best? The Answer Flips Depending on How You Score It",
+    "author": "Aqeel Abbas",
+    "url": "https://medium.com/illumination/which-rag-chunk-size-is-best-the-answer-flips-depending-on-how-you-score-it-2c3ef424e50c",
+    "access": "Public preview only, not a reproduction of hidden article methods"
+  },
+  "dataset": {
+    "id": "cmriat/2wikimultihopqa",
+    "url": "https://huggingface.co/datasets/cmriat/2wikimultihopqa",
+    "original_repo": "https://github.com/Alab-NII/2wikimultihop",
+    "paper": "https://arxiv.org/abs/2011.01060"
+  },
+  "fetched_utc": "2026-10-18T17:51:45.274552+00:00",
+  "cmriat/2wikimultihopqa": {
+    "sha": "6413680dd683bb90189f10e3ce9a1f0eba2d1dc9",
+    "lastModified": "2025-06-26T09:01:32.000Z"
+  },
+  "Qwen/Qwen3-8B": {
+    "sha": "b968826d9c46dd6066d109eabc6255188de91218",
+    "lastModified": "2025-07-26T03:49:13.000Z"
+  },
+  "Qwen/Qwen3-Embedding-0.6B": {
+    "sha": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "lastModified": "2026-04-20T02:45:58.000Z"
+  }
+}

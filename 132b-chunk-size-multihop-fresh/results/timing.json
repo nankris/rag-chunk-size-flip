@@ -1,0 +1,23 @@
+{
+  "estimated_minutes": 110,
+  "plan_minutes": {
+    "setup": 20,
+    "GPU run": 65,
+    "eval": 10,
+    "writeup": 15
+  },
+  "start_ist": "2026-10-18T23:14:51.191546+05:30",
+  "GPU": "NVIDIA L4",
+  "notes": "Recorded clock starts at directory initialization, after initial setup sourcing and reading the prior writeup. Wall stages will be partitioned; writing preparation overlapped the GPU run.",
+  "end_ist": "2026-10-19T00:59:53.320305+05:30",
+  "actual_minutes": 105.03547931666667,
+  "CU_upper_bound": 4.93,
+  "stage_minutes": {
+    "setup": 5.296807566666667,
+    "GPU run": 97.48601975,
+    "eval": 1.2137445,
+    "writeup": 1.0389074999999999
+  },
+  "GPU_run_definition": "Wall interval from first retrieval attempt through DONE, including reader download/warmup and one checkpoint-preserving operational restart. GPU-run time is not a pure kernel benchmark.",
+  "overlap_note": "Writing preparation overlapped GPU work; the four reported stages partition elapsed wall time rather than summing labor time."
+}
