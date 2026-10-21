@@ -1,0 +1,377 @@
+=== STARTING EXPERIMENT 132c ON COLAB L4 ===
+=== 1. Dense Retrieval (Embedding & FAISS) ===
+Loading embedding model and tokenizer...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  52%|█████▏    | 162/310 [00:00<00:00, 1613.77it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1764.70it/s]
+=== Starting retrieval for stage: pilot ===
+EMBED pilot_query_embeddings.npy: 48/300
+EMBED pilot_query_embeddings.npy: 300/300
+Created 6821 chunks of size 128 for pilot
+EMBED pilot_chunk_embeddings_128.npy: 48/6821
+EMBED pilot_chunk_embeddings_128.npy: 1008/6821
+EMBED pilot_chunk_embeddings_128.npy: 1968/6821
+EMBED pilot_chunk_embeddings_128.npy: 2928/6821
+EMBED pilot_chunk_embeddings_128.npy: 3888/6821
+EMBED pilot_chunk_embeddings_128.npy: 4848/6821
+EMBED pilot_chunk_embeddings_128.npy: 5808/6821
+EMBED pilot_chunk_embeddings_128.npy: 6768/6821
+EMBED pilot_chunk_embeddings_128.npy: 6821/6821
+RETRIEVAL_DONE pilot size 128: 300 items, 43.7s | Recall: 0.7317, MRR: 0.8650
+Created 5038 chunks of size 256 for pilot
+EMBED pilot_chunk_embeddings_256.npy: 48/5038
+EMBED pilot_chunk_embeddings_256.npy: 1008/5038
+EMBED pilot_chunk_embeddings_256.npy: 1968/5038
+EMBED pilot_chunk_embeddings_256.npy: 2928/5038
+EMBED pilot_chunk_embeddings_256.npy: 3888/5038
+EMBED pilot_chunk_embeddings_256.npy: 4848/5038
+EMBED pilot_chunk_embeddings_256.npy: 5038/5038
+RETRIEVAL_DONE pilot size 256: 300 items, 75.1s | Recall: 0.6997, MRR: 0.8631
+Created 4565 chunks of size 512 for pilot
+EMBED pilot_chunk_embeddings_512.npy: 48/4565
+EMBED pilot_chunk_embeddings_512.npy: 1008/4565
+EMBED pilot_chunk_embeddings_512.npy: 1968/4565
+EMBED pilot_chunk_embeddings_512.npy: 2928/4565
+EMBED pilot_chunk_embeddings_512.npy: 3888/4565
+EMBED pilot_chunk_embeddings_512.npy: 4565/4565
+RETRIEVAL_DONE pilot size 512: 300 items, 127.1s | Recall: 0.6797, MRR: 0.8662
+Created 4445 chunks of size 1024 for pilot
+EMBED pilot_chunk_embeddings_1024.npy: 48/4445
+EMBED pilot_chunk_embeddings_1024.npy: 1008/4445
+EMBED pilot_chunk_embeddings_1024.npy: 1968/4445
+EMBED pilot_chunk_embeddings_1024.npy: 2928/4445
+EMBED pilot_chunk_embeddings_1024.npy: 3888/4445
+EMBED pilot_chunk_embeddings_1024.npy: 4445/4445
+RETRIEVAL_DONE pilot size 1024: 300 items, 178.5s | Recall: 0.6711, MRR: 0.8597
+=== Starting retrieval for stage: confirm ===
+EMBED confirm_query_embeddings.npy: 48/2417
+EMBED confirm_query_embeddings.npy: 1008/2417
+EMBED confirm_query_embeddings.npy: 1968/2417
+EMBED confirm_query_embeddings.npy: 2417/2417
+Created 27740 chunks of size 128 for confirm
+EMBED confirm_chunk_embeddings_128.npy: 48/27740
+EMBED confirm_chunk_embeddings_128.npy: 1008/27740
+EMBED confirm_chunk_embeddings_128.npy: 1968/27740
+EMBED confirm_chunk_embeddings_128.npy: 2928/27740
+EMBED confirm_chunk_embeddings_128.npy: 3888/27740
+EMBED confirm_chunk_embeddings_128.npy: 4848/27740
+EMBED confirm_chunk_embeddings_128.npy: 5808/27740
+EMBED confirm_chunk_embeddings_128.npy: 6768/27740
+EMBED confirm_chunk_embeddings_128.npy: 7728/27740
+EMBED confirm_chunk_embeddings_128.npy: 8688/27740
+EMBED confirm_chunk_embeddings_128.npy: 9648/27740
+EMBED confirm_chunk_embeddings_128.npy: 10608/27740
+EMBED confirm_chunk_embeddings_128.npy: 11568/27740
+EMBED confirm_chunk_embeddings_128.npy: 12528/27740
+EMBED confirm_chunk_embeddings_128.npy: 13488/27740
+EMBED confirm_chunk_embeddings_128.npy: 14448/27740
+EMBED confirm_chunk_embeddings_128.npy: 15408/27740
+EMBED confirm_chunk_embeddings_128.npy: 16368/27740
+EMBED confirm_chunk_embeddings_128.npy: 17328/27740
+EMBED confirm_chunk_embeddings_128.npy: 18288/27740
+EMBED confirm_chunk_embeddings_128.npy: 19248/27740
+EMBED confirm_chunk_embeddings_128.npy: 20208/27740
+EMBED confirm_chunk_embeddings_128.npy: 21168/27740
+EMBED confirm_chunk_embeddings_128.npy: 22128/27740
+EMBED confirm_chunk_embeddings_128.npy: 23088/27740
+EMBED confirm_chunk_embeddings_128.npy: 24048/27740
+EMBED confirm_chunk_embeddings_128.npy: 25008/27740
+EMBED confirm_chunk_embeddings_128.npy: 25968/27740
+EMBED confirm_chunk_embeddings_128.npy: 26928/27740
+EMBED confirm_chunk_embeddings_128.npy: 27740/27740
+RETRIEVAL_DONE confirm size 128: 2417 items, 191.4s | Recall: 0.6013, MRR: 0.8223
+Created 20441 chunks of size 256 for confirm
+EMBED confirm_chunk_embeddings_256.npy: 48/20441
+EMBED confirm_chunk_embeddings_256.npy: 1008/20441
+EMBED confirm_chunk_embeddings_256.npy: 1968/20441
+EMBED confirm_chunk_embeddings_256.npy: 2928/20441
+EMBED confirm_chunk_embeddings_256.npy: 3888/20441
+EMBED confirm_chunk_embeddings_256.npy: 4848/20441
+EMBED confirm_chunk_embeddings_256.npy: 5808/20441
+EMBED confirm_chunk_embeddings_256.npy: 6768/20441
+EMBED confirm_chunk_embeddings_256.npy: 7728/20441
+EMBED confirm_chunk_embeddings_256.npy: 8688/20441
+EMBED confirm_chunk_embeddings_256.npy: 9648/20441
+EMBED confirm_chunk_embeddings_256.npy: 10608/20441
+EMBED confirm_chunk_embeddings_256.npy: 11568/20441
+EMBED confirm_chunk_embeddings_256.npy: 12528/20441
+EMBED confirm_chunk_embeddings_256.npy: 13488/20441
+EMBED confirm_chunk_embeddings_256.npy: 14448/20441
+EMBED confirm_chunk_embeddings_256.npy: 15408/20441
+EMBED confirm_chunk_embeddings_256.npy: 16368/20441
+EMBED confirm_chunk_embeddings_256.npy: 17328/20441
+EMBED confirm_chunk_embeddings_256.npy: 18288/20441
+EMBED confirm_chunk_embeddings_256.npy: 19248/20441
+EMBED confirm_chunk_embeddings_256.npy: 20208/20441
+EMBED confirm_chunk_embeddings_256.npy: 20441/20441
+RETRIEVAL_DONE confirm size 256: 2417 items, 305.8s | Recall: 0.5644, MRR: 0.8285
+Created 18516 chunks of size 512 for confirm
+EMBED confirm_chunk_embeddings_512.npy: 48/18516
+EMBED confirm_chunk_embeddings_512.npy: 1008/18516
+EMBED confirm_chunk_embeddings_512.npy: 1968/18516
+EMBED confirm_chunk_embeddings_512.npy: 2928/18516
+EMBED confirm_chunk_embeddings_512.npy: 3888/18516
+EMBED confirm_chunk_embeddings_512.npy: 4848/18516
+EMBED confirm_chunk_embeddings_512.npy: 5808/18516
+EMBED confirm_chunk_embeddings_512.npy: 6768/18516
+EMBED confirm_chunk_embeddings_512.npy: 7728/18516
+EMBED confirm_chunk_embeddings_512.npy: 8688/18516
+EMBED confirm_chunk_embeddings_512.npy: 9648/18516
+EMBED confirm_chunk_embeddings_512.npy: 10608/18516
+EMBED confirm_chunk_embeddings_512.npy: 11568/18516
+EMBED confirm_chunk_embeddings_512.npy: 12528/18516
+EMBED confirm_chunk_embeddings_512.npy: 13488/18516
+EMBED confirm_chunk_embeddings_512.npy: 14448/18516
+EMBED confirm_chunk_embeddings_512.npy: 15408/18516
+EMBED confirm_chunk_embeddings_512.npy: 16368/18516
+EMBED confirm_chunk_embeddings_512.npy: 17328/18516
+EMBED confirm_chunk_embeddings_512.npy: 18288/18516
+EMBED confirm_chunk_embeddings_512.npy: 18516/18516
+RETRIEVAL_DONE confirm size 512: 2417 items, 498.7s | Recall: 0.5349, MRR: 0.8312
+Created 17920 chunks of size 1024 for confirm
+EMBED confirm_chunk_embeddings_1024.npy: 48/17920
+EMBED confirm_chunk_embeddings_1024.npy: 1008/17920
+EMBED confirm_chunk_embeddings_1024.npy: 1968/17920
+EMBED confirm_chunk_embeddings_1024.npy: 2928/17920
+EMBED confirm_chunk_embeddings_1024.npy: 3888/17920
+EMBED confirm_chunk_embeddings_1024.npy: 4848/17920
+EMBED confirm_chunk_embeddings_1024.npy: 5808/17920
+EMBED confirm_chunk_embeddings_1024.npy: 6768/17920
+EMBED confirm_chunk_embeddings_1024.npy: 7728/17920
+EMBED confirm_chunk_embeddings_1024.npy: 8688/17920
+EMBED confirm_chunk_embeddings_1024.npy: 9648/17920
+EMBED confirm_chunk_embeddings_1024.npy: 10608/17920
+EMBED confirm_chunk_embeddings_1024.npy: 11568/17920
+EMBED confirm_chunk_embeddings_1024.npy: 12528/17920
+EMBED confirm_chunk_embeddings_1024.npy: 13488/17920
+EMBED confirm_chunk_embeddings_1024.npy: 14448/17920
+EMBED confirm_chunk_embeddings_1024.npy: 15408/17920
+EMBED confirm_chunk_embeddings_1024.npy: 16368/17920
+EMBED confirm_chunk_embeddings_1024.npy: 17328/17920
+EMBED confirm_chunk_embeddings_1024.npy: 17920/17920
+RETRIEVAL_DONE confirm size 1024: 2417 items, 722.7s | Recall: 0.5134, MRR: 0.8250
+ALL RETRIEVAL COMPLETE
+=== 2. Qwen3-4B Generation & Judging ===
+Loading Qwen3-4B for generation...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:02<00:04,  2.32s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:24<00:14, 14.05s/it]Fetching 3 files: 100%|██████████| 3/3 [00:24<00:00,  8.19s/it]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<02:41,  2.46it/s]Loading weights:  12%|█▏        | 47/398 [00:00<00:02, 120.33it/s]Loading weights:  19%|█▊        | 74/398 [00:00<00:02, 141.93it/s]Loading weights:  24%|██▍       | 97/398 [00:00<00:01, 154.73it/s]Loading weights:  30%|██▉       | 118/398 [00:00<00:01, 159.55it/s]Loading weights:  35%|███▍      | 138/398 [00:01<00:01, 160.56it/s]Loading weights:  39%|███▉      | 157/398 [00:01<00:01, 162.26it/s]Loading weights:  45%|████▍     | 179/398 [00:01<00:01, 172.42it/s]Loading weights:  51%|█████     | 201/398 [00:01<00:01, 175.75it/s]Loading weights:  56%|█████▌    | 223/398 [00:01<00:00, 176.21it/s]Loading weights:  62%|██████▏   | 245/398 [00:01<00:00, 176.40it/s]Loading weights:  67%|██████▋   | 267/398 [00:01<00:00, 177.20it/s]Loading weights:  73%|███████▎  | 289/398 [00:01<00:00, 177.65it/s]Loading weights:  78%|███████▊  | 311/398 [00:01<00:00, 177.10it/s]Loading weights:  84%|████████▎ | 333/398 [00:02<00:00, 178.93it/s]Loading weights:  89%|████████▉ | 355/398 [00:02<00:00, 178.35it/s]Loading weights:  95%|█████████▍| 377/398 [00:02<00:00, 178.20it/s]Loading weights: 100%|██████████| 398/398 [00:02<00:00, 162.45it/s]
+Stage pilot size 128: 0 already done, 300 remaining
+ANSWER_BATCH pilot size 128: 160/300 in 28.43s (1.1 req/s)
+ANSWER_BATCH pilot size 128: 300/300 in 5.47s (2.2 req/s)
+Stage pilot size 256: 0 already done, 300 remaining
+ANSWER_BATCH pilot size 256: 160/300 in 24.30s (1.3 req/s)
+ANSWER_BATCH pilot size 256: 300/300 in 5.45s (2.2 req/s)
+Stage pilot size 512: 0 already done, 300 remaining
+Traceback (most recent call last):
+  File "/content/b10-132c/scripts/generate.py", line 205, in <module>
+    main()
+    ~~~~^^
+  File "/content/b10-132c/scripts/generate.py", line 100, in main
+    outputs = model.generate(
+        **inputs,
+    ...<2 lines>...
+        pad_token_id=tok.pad_token_id
+    )
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/generation/utils.py", line 2989, in generate
+    result = decoding_method(
+        self,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/generation/utils.py", line 3189, in _sample
+    outputs = self._prefill(
+        input_ids,
+    ...<2 lines>...
+        is_first_iteration=not generation_config.is_assistant,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/generation/utils.py", line 4300, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen3/modeling_qwen3.py", line 469, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1081, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen3/modeling_qwen3.py", line 405, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 111, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen3/modeling_qwen3.py", line 313, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen3/modeling_qwen3.py", line 81, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 950.00 MiB. GPU 0 has a total capacity of 22.03 GiB of which 615.12 MiB is free. Including non-PyTorch memory, this process has 21.43 GiB memory in use. Of the allocated memory 17.06 GiB is allocated by PyTorch, and 4.14 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+Loading Qwen3-4B for generation...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<02:13,  2.98it/s]Loading weights:  12%|█▏        | 47/398 [00:00<00:02, 132.18it/s]Loading weights:  18%|█▊        | 70/398 [00:00<00:02, 144.85it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:01, 157.35it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:01, 164.25it/s]Loading weights:  34%|███▍      | 135/398 [00:00<00:01, 166.03it/s]Loading weights:  39%|███▉      | 157/398 [00:01<00:01, 170.57it/s]Loading weights:  45%|████▍     | 179/398 [00:01<00:01, 169.96it/s]Loading weights:  51%|█████     | 201/398 [00:01<00:01, 171.09it/s]Loading weights:  56%|█████▌    | 223/398 [00:01<00:01, 170.32it/s]Loading weights:  62%|██████▏   | 245/398 [00:01<00:00, 172.45it/s]Loading weights:  67%|██████▋   | 267/398 [00:01<00:00, 177.13it/s]Loading weights:  73%|███████▎  | 289/398 [00:01<00:00, 176.97it/s]Loading weights:  78%|███████▊  | 311/398 [00:01<00:00, 174.01it/s]Loading weights:  84%|████████▎ | 333/398 [00:02<00:00, 175.63it/s]Loading weights:  89%|████████▉ | 355/398 [00:02<00:00, 178.52it/s]Loading weights:  95%|█████████▍| 377/398 [00:02<00:00, 178.37it/s]Loading weights: 100%|██████████| 398/398 [00:02<00:00, 164.80it/s]
+Stage pilot size 128: 300 already done, 0 remaining
+Stage pilot size 256: 300 already done, 0 remaining
+Stage pilot size 512: 0 already done, 300 remaining
+ANSWER_BATCH pilot size 512: 120/300 in 9.99s (1.2 req/s)
+ANSWER_BATCH pilot size 512: 240/300 in 5.94s (2.0 req/s)
+ANSWER_BATCH pilot size 512: 300/300 in 6.31s (1.9 req/s)
+Stage pilot size 1024: 0 already done, 300 remaining
+ANSWER_BATCH pilot size 1024: 120/300 in 13.30s (0.9 req/s)
+ANSWER_BATCH pilot size 1024: 240/300 in 5.82s (2.1 req/s)
+ANSWER_BATCH pilot size 1024: 300/300 in 9.00s (1.3 req/s)
+Stage pilot judge: 240 evaluations to run
+JUDGE_BATCH pilot: 24/240
+JUDGE_BATCH pilot: 48/240
+JUDGE_BATCH pilot: 72/240
+JUDGE_BATCH pilot: 96/240
+JUDGE_BATCH pilot: 120/240
+JUDGE_BATCH pilot: 144/240
+JUDGE_BATCH pilot: 168/240
+JUDGE_BATCH pilot: 192/240
+JUDGE_BATCH pilot: 216/240
+JUDGE_BATCH pilot: 240/240
+Stage confirm size 128: 0 already done, 2417 remaining
+ANSWER_BATCH confirm size 128: 120/2417 in 8.80s (1.4 req/s)
+ANSWER_BATCH confirm size 128: 240/2417 in 8.22s (1.5 req/s)
+ANSWER_BATCH confirm size 128: 360/2417 in 7.16s (1.7 req/s)
+ANSWER_BATCH confirm size 128: 480/2417 in 13.02s (0.9 req/s)
+ANSWER_BATCH confirm size 128: 600/2417 in 8.97s (1.3 req/s)
+ANSWER_BATCH confirm size 128: 720/2417 in 7.15s (1.7 req/s)
+ANSWER_BATCH confirm size 128: 840/2417 in 4.67s (2.6 req/s)
+ANSWER_BATCH confirm size 128: 960/2417 in 13.01s (0.9 req/s)
+ANSWER_BATCH confirm size 128: 1080/2417 in 6.57s (1.8 req/s)
+ANSWER_BATCH confirm size 128: 1200/2417 in 11.44s (1.0 req/s)
+ANSWER_BATCH confirm size 128: 1320/2417 in 5.69s (2.1 req/s)
+ANSWER_BATCH confirm size 128: 1440/2417 in 4.86s (2.5 req/s)
+ANSWER_BATCH confirm size 128: 1560/2417 in 4.87s (2.5 req/s)
+ANSWER_BATCH confirm size 128: 1680/2417 in 13.21s (0.9 req/s)
+ANSWER_BATCH confirm size 128: 1800/2417 in 8.23s (1.5 req/s)
+ANSWER_BATCH confirm size 128: 1920/2417 in 5.15s (2.3 req/s)
+ANSWER_BATCH confirm size 128: 2040/2417 in 8.40s (1.4 req/s)
+ANSWER_BATCH confirm size 128: 2160/2417 in 4.89s (2.5 req/s)
+ANSWER_BATCH confirm size 128: 2280/2417 in 9.53s (1.3 req/s)
+ANSWER_BATCH confirm size 128: 2400/2417 in 9.62s (1.2 req/s)
+ANSWER_BATCH confirm size 128: 2417/2417 in 2.36s (2.1 req/s)
+Stage confirm size 256: 0 already done, 2417 remaining
+ANSWER_BATCH confirm size 256: 120/2417 in 10.71s (1.1 req/s)
+ANSWER_BATCH confirm size 256: 240/2417 in 11.60s (1.0 req/s)
+ANSWER_BATCH confirm size 256: 360/2417 in 7.52s (1.6 req/s)
+ANSWER_BATCH confirm size 256: 480/2417 in 14.16s (0.8 req/s)
+ANSWER_BATCH confirm size 256: 600/2417 in 13.29s (0.9 req/s)
+ANSWER_BATCH confirm size 256: 720/2417 in 8.67s (1.4 req/s)
+ANSWER_BATCH confirm size 256: 840/2417 in 5.19s (2.3 req/s)
+ANSWER_BATCH confirm size 256: 960/2417 in 5.37s (2.2 req/s)
+ANSWER_BATCH confirm size 256: 1080/2417 in 5.28s (2.3 req/s)
+ANSWER_BATCH confirm size 256: 1200/2417 in 9.86s (1.2 req/s)
+ANSWER_BATCH confirm size 256: 1320/2417 in 5.46s (2.2 req/s)
+ANSWER_BATCH confirm size 256: 1440/2417 in 5.28s (2.3 req/s)
+ANSWER_BATCH confirm size 256: 1560/2417 in 4.90s (2.5 req/s)
+ANSWER_BATCH confirm size 256: 1680/2417 in 5.43s (2.2 req/s)
+ANSWER_BATCH confirm size 256: 1800/2417 in 8.46s (1.4 req/s)
+ANSWER_BATCH confirm size 256: 1920/2417 in 5.10s (2.4 req/s)
+ANSWER_BATCH confirm size 256: 2040/2417 in 4.69s (2.6 req/s)
+ANSWER_BATCH confirm size 256: 2160/2417 in 5.12s (2.3 req/s)
+ANSWER_BATCH confirm size 256: 2280/2417 in 5.37s (2.2 req/s)
+ANSWER_BATCH confirm size 256: 2400/2417 in 14.04s (0.9 req/s)
+ANSWER_BATCH confirm size 256: 2417/2417 in 1.93s (2.6 req/s)
+Stage confirm size 512: 0 already done, 2417 remaining
+ANSWER_BATCH confirm size 512: 120/2417 in 10.67s (1.1 req/s)
+ANSWER_BATCH confirm size 512: 240/2417 in 13.23s (0.9 req/s)
+ANSWER_BATCH confirm size 512: 360/2417 in 8.83s (1.4 req/s)
+ANSWER_BATCH confirm size 512: 480/2417 in 10.52s (1.1 req/s)
+ANSWER_BATCH confirm size 512: 600/2417 in 10.37s (1.2 req/s)
+ANSWER_BATCH confirm size 512: 720/2417 in 11.36s (1.1 req/s)
+ANSWER_BATCH confirm size 512: 840/2417 in 6.14s (2.0 req/s)
+ANSWER_BATCH confirm size 512: 960/2417 in 7.83s (1.5 req/s)
+ANSWER_BATCH confirm size 512: 1080/2417 in 10.23s (1.2 req/s)
+ANSWER_BATCH confirm size 512: 1200/2417 in 15.02s (0.8 req/s)
+ANSWER_BATCH confirm size 512: 1320/2417 in 7.15s (1.7 req/s)
+ANSWER_BATCH confirm size 512: 1440/2417 in 5.28s (2.3 req/s)
+ANSWER_BATCH confirm size 512: 1560/2417 in 5.24s (2.3 req/s)
+ANSWER_BATCH confirm size 512: 1680/2417 in 6.18s (1.9 req/s)
+ANSWER_BATCH confirm size 512: 1800/2417 in 15.82s (0.8 req/s)
+ANSWER_BATCH confirm size 512: 1920/2417 in 6.00s (2.0 req/s)
+=== RESUMING EXPERIMENT 132c ON COLAB L4 ===
+=== 2. Qwen3-4B Generation & Judging (Resuming) ===
+Loading Qwen3-4B for generation...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:02<00:04,  2.19s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:23<00:13, 13.66s/it]Fetching 3 files: 100%|██████████| 3/3 [00:23<00:00,  7.96s/it]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<02:48,  2.35it/s]Loading weights:  12%|█▏        | 48/398 [00:00<00:03, 115.14it/s]Loading weights:  18%|█▊        | 72/398 [00:00<00:02, 137.40it/s]Loading weights:  24%|██▎       | 94/398 [00:00<00:02, 149.07it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:01, 155.19it/s]Loading weights:  34%|███▍      | 135/398 [00:01<00:01, 162.90it/s]Loading weights:  39%|███▉      | 157/398 [00:01<00:01, 157.04it/s]Loading weights:  45%|████▍     | 179/398 [00:01<00:01, 171.76it/s]Loading weights:  51%|█████     | 201/398 [00:01<00:01, 175.06it/s]Loading weights:  56%|█████▌    | 223/398 [00:01<00:00, 175.74it/s]Loading weights:  62%|██████▏   | 245/398 [00:01<00:00, 168.52it/s]Loading weights:  67%|██████▋   | 267/398 [00:01<00:00, 168.87it/s]Loading weights:  73%|███████▎  | 289/398 [00:01<00:00, 174.81it/s]Loading weights:  78%|███████▊  | 311/398 [00:02<00:00, 177.94it/s]Loading weights:  84%|████████▎ | 333/398 [00:02<00:00, 175.79it/s]Loading weights:  89%|████████▉ | 355/398 [00:02<00:00, 177.01it/s]Loading weights:  95%|█████████▍| 377/398 [00:02<00:00, 176.95it/s]Loading weights: 100%|██████████| 398/398 [00:02<00:00, 159.65it/s]
+Stage confirm size 128: 2417 already done, 0 remaining
+Stage confirm size 256: 2417 already done, 0 remaining
+Stage confirm size 512: 2028 already done, 389 remaining
+ANSWER_BATCH confirm size 512: 120/389 in 15.20s (0.8 req/s)
+ANSWER_BATCH confirm size 512: 240/389 in 5.82s (2.1 req/s)
+ANSWER_BATCH confirm size 512: 360/389 in 6.64s (1.8 req/s)
+ANSWER_BATCH confirm size 512: 389/389 in 2.24s (2.2 req/s)
+Stage confirm size 1024: 0 already done, 2417 remaining
+ANSWER_BATCH confirm size 1024: 120/2417 in 14.94s (0.8 req/s)
+ANSWER_BATCH confirm size 1024: 240/2417 in 15.01s (0.8 req/s)
+ANSWER_BATCH confirm size 1024: 360/2417 in 8.81s (1.4 req/s)
+ANSWER_BATCH confirm size 1024: 480/2417 in 9.91s (1.2 req/s)
+ANSWER_BATCH confirm size 1024: 600/2417 in 10.35s (1.2 req/s)
+ANSWER_BATCH confirm size 1024: 720/2417 in 11.49s (1.0 req/s)
+ANSWER_BATCH confirm size 1024: 840/2417 in 8.22s (1.5 req/s)
+ANSWER_BATCH confirm size 1024: 960/2417 in 9.09s (1.3 req/s)
+ANSWER_BATCH confirm size 1024: 1080/2417 in 8.02s (1.5 req/s)
+ANSWER_BATCH confirm size 1024: 1200/2417 in 18.94s (0.6 req/s)
+ANSWER_BATCH confirm size 1024: 1320/2417 in 7.29s (1.6 req/s)
+ANSWER_BATCH confirm size 1024: 1440/2417 in 5.29s (2.3 req/s)
+ANSWER_BATCH confirm size 1024: 1560/2417 in 9.08s (1.3 req/s)
+ANSWER_BATCH confirm size 1024: 1680/2417 in 17.12s (0.7 req/s)
+ANSWER_BATCH confirm size 1024: 1800/2417 in 11.18s (1.1 req/s)
+ANSWER_BATCH confirm size 1024: 1920/2417 in 6.74s (1.8 req/s)
+ANSWER_BATCH confirm size 1024: 2040/2417 in 8.76s (1.4 req/s)
+ANSWER_BATCH confirm size 1024: 2160/2417 in 6.92s (1.7 req/s)
+ANSWER_BATCH confirm size 1024: 2280/2417 in 18.49s (0.6 req/s)
+ANSWER_BATCH confirm size 1024: 2400/2417 in 8.66s (1.4 req/s)
+ANSWER_BATCH confirm size 1024: 2417/2417 in 2.22s (2.3 req/s)
+Stage confirm judge: 240 evaluations to run
+JUDGE_BATCH confirm: 24/240
+JUDGE_BATCH confirm: 48/240
+JUDGE_BATCH confirm: 72/240
+JUDGE_BATCH confirm: 96/240
+JUDGE_BATCH confirm: 120/240
+JUDGE_BATCH confirm: 144/240
+JUDGE_BATCH confirm: 168/240
+JUDGE_BATCH confirm: 192/240
+JUDGE_BATCH confirm: 216/240
+JUDGE_BATCH confirm: 240/240
+ALL GENERATION AND JUDGING COMPLETE
+=== EXPERIMENT 132c COMPLETE ===

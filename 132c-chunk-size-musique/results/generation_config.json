@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "dtype": "float16",
+  "max_new_tokens": 64,
+  "temperature": 0,
+  "padding_side": "left",
+  "batch_size": 12,
+  "seed": 132
+}
